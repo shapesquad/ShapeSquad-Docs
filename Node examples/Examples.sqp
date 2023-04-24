@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="19">
+<mintime>0.000000000e+00</mintime>
+<maxtime>6.000000000e+01</maxtime>
+<currenttime>0.000000000e+00</currenttime>
+<assetlocations class_id="0" tracking_level="0" version="0">
+	<count>1</count>
+	<item_version>0</item_version>
+	<item>Uniform Repeat.sqa</item>
+</assetlocations>
+</boost_serialization>
+
