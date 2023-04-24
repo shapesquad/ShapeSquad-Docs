@@ -1,2 +1,1 @@
-# docs
-ShapeSquad documentation
+ShapeSquad Creator documentation
