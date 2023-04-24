@@ -58,7 +58,7 @@ gradient(keys, 1)
 ```
 
 ### Simple hash function
-
+```
 let hash1 = \( n:Float ): Float -> fract(sin(n)*43758.5453) in 
 
 Simple hash 2D function
@@ -67,8 +67,7 @@ let hash2 = ( p: Vector2D ): Vector2D ->
   let  p = vec2( dot(p,vec2(127.1,311.7)), dot(p,vec2(269.5,183.3)) in 
     fract(sin(p)*43758.5453)
 in 1
-
-
+```
 
 ### Remap
 ```
@@ -103,9 +102,7 @@ if length(x) == 0 then [] else append([if head(x)==p then 0 else head(x)], repla
 in replace([0.1,0.2,0.3], 0.2)
 ```
 
-
 ### Useful expressions
-
 
 ### Diagonal lines
 ```
