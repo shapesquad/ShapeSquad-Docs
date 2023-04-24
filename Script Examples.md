@@ -102,8 +102,6 @@ if length(x) == 0 then [] else append([if head(x)==p then 0 else head(x)], repla
 in replace([0.1,0.2,0.3], 0.2)
 ```
 
-### Useful expressions
-
 ### Diagonal lines
 ```
 max(smoothstep(0.7,1,sin(x*10+y*10)),smoothstep(0.7,1,sin(-x*10+y*10)))
