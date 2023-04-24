@@ -1,47 +1,47 @@
 
 
-
-// Adding two paramaters
-
+### Adding two paramaters
+```
 \
 (a:Float, b:Float)
 :Float->
 a+b
+```
 
-
-Color gradient
-
+### Color gradient
+```
 colorgradient([ 
 { pos=0, color=rgba(0.0, 1.0, 1.0, 1.0), type=1 }, 
 { pos=1, color=rgba(1.0, 1.0, 1.0, 1.0), type=1 }, 
 { pos=2, color=rgba(1.0, 0.0, 1.0, 1.0), type=1 } 
 ])
+```
 
-Polygon creation
-
+### Polygon creation
+```
 let a = [vec2(0,0), vec2(0,1), vec2(1,1), vec2(1,0)] in 
 polygon(a)
+```
 
-
-Multiple outputs
-
+### Multiple outputs
+```
 \(a:Float, b:Float):{ sum:Float, diff:Float } -> { sum=a+b, diff = a-b }
+```
 
-
-Loop
-
+### Loop
+```
 letrec loop_n = \(n:Int, a:Int, f:(Int, Int):Int):Int -> if n == 0 then f(n, a) else loop_n(n - 1, f(n, a), f)
 in loop_n(10, 0, \(i:Int, a:Int):Int -> a+i)
+```
 
-Loop inside loop
-
+### Loop inside loop
+```
 letrec loop_n = \(n:Int, a:Int, f:(Int, Int):Int):Int -> if n == 0 then f(n, a) else loop_n(n - 1, f(n, a), f)
   in loop_n(10, 0, \(i:Int, a:Int):Int -> loop_n(10, a, \(j:Int, a:Int):Int -> a + i + j))
+```
 
-
-
-Recursive  Color gradient
-
+### Recursive  Color gradient
+```
 \(keys:[{c:Color,k:Float,m:Int}], input: Float ):Color->
 let mixcolor = \(c1:Color, c2:Color, f:Float, f1:Float, m:Int):Color ->
     let f = if m>0 then step(f, input) else smoothstep(f1, f, input)
@@ -55,9 +55,9 @@ let mixcolor = \(c1:Color, c2:Color, f:Float, f1:Float, m:Int):Color ->
      in 
 
 gradient(keys, 1)
+```
 
-
-Simple hash function
+### Simple hash function
 
 let hash1 = \( n:Float ): Float -> fract(sin(n)*43758.5453) in 
 
@@ -70,8 +70,8 @@ in 1
 
 
 
-// Remap
-
+### Remap
+```
 \(input: Float, ranges:[{r1:Float, r2:Float, v:Float}]): Float ->
 
  letrec
@@ -81,63 +81,58 @@ in 1
 	            if (head(ranges).r1 < input && head(ranges).r2 > input) then head(ranges).v else remap(tail(ranges))
             in 
 remap(ranges)
+```
 
-
-
-
-Recursive sum
-
+### Recursive sum
+```
 letrec 
   sum = \(x:[Float]):Float 
 -> if length(x) == 0 then 0 else head(x) + sum(tail(x)) 
 
 in sum([0.1,0.2,0.3])
+```
 
 
-
-Replace element in array
-
+### Replace element in array
+```
 letrec 
   replace = \(x:[Float], p:Float):[Float] 
 -> 
 if length(x) == 0 then [] else append([if head(x)==p then 0 else head(x)], replace(tail(x),p)) 
 
 in replace([0.1,0.2,0.3], 0.2)
+```
 
 
+### Useful expressions
 
-Useful expressions
 
-
-Diagonal lines
-
+### Diagonal lines
+```
 max(smoothstep(0.7,1,sin(x*10+y*10)),smoothstep(0.7,1,sin(-x*10+y*10)))
+```
 
-
-Circle
-
+### Circle
+```
 sqrt((x*x + y*y))
+```
 
-
-Rays
-
+### Rays
+```
 abs(mod(atan(y,x)+2.03, 1.255/4) - 1.255/8)
+```
 
-
-
-Triangular Wave
-
+### Triangular Wave
+```
 abs(mod(y, 1) - 0.5)
+```
 
-
-
-Arc
-
+### Arc
+```
 atan(y,x) >-1?0:1
+```
 
-
-
-Waves
-
+### Waves
+```
 cos(atan(y,x)*10.)*.2
-
+```
