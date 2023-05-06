@@ -44,7 +44,7 @@ This sample defines a recursive function that calculates both sum and product of
 
 <type>   ::= '[' <type> ']'
            | '{' id ':' <type> ',' ... ',' id ':' <type> '}'
-           | 'Void' | 'Int' | 'Float' | 'Color' | 'Vector2D' | 'Vector3D' | 'IndexVector'
+           | 'Void' | 'Int' | 'Float' | 'Color' | 'Vector2D' | 'Vector3D' | 'IndexVector' | 'ColorGradient' | 'Path2D'
 ```
 
 
@@ -100,7 +100,7 @@ Here $T, T_1, ..., T_n$ can be any type.
 | $e.f$              | $T$         | Syntactic sugar for $f(e)$, if $e$ is a list ($T$ is the result type of $f$)
 | $\lbrace f_1=e_1, ..., f_n=e_n \rbrace$ | $\lbrace f_1:T_1, ..., f_n:T_n\rbrace$ | Constructs an anonymous record with specified fields (where $T_i$ is the type of $e_i$)
 | $e.f$              | $T$         | Extracts field $f$ of the record (where $T$ is the type of $f$)
-| $\backslash(a_1:T_1, ..., a_n:T_n):T$ | $(T_1, ..., T_n):T$ | Constructs a function expression
+| $\backslash(a_1:T_1, ..., a_n:T_n):T$ -> $e$ | $(T_1, ..., T_n):T$ | Constructs a function expression, with arguments $a_i$ of type $T_i$
 | $e(e_1, ..., e_n)$ | $T$         | Function application (where $T$ is the result type of the function)
 
 
@@ -125,6 +125,7 @@ These variables can be only evaluated at runtime.
 | Function | Type            | Description 
 |----------|-----------------|------------
 | $int$    | $(Float):Int$   | Float to int (truncating)
+| $float$  | $(Int):Float$   | Int to float
 | $abs$    | $(Float):Float$ | Absolute value
 | $exp$    | $(Float):Float$ | Natural exponent
 | $log$    | $(Float):Float$ | Natural logarithm
@@ -147,12 +148,6 @@ These variables can be only evaluated at runtime.
 | $polygon$ | $([Vector2D]):Path2D$ | Constructs a polygon from a list of points
 | $min$    | $(a):a$, where $a \in \lbrace Int, Float \rbrace$ | Minimum of two inputs
 | $max$    | $(a):a$, where $a \in \lbrace Int, Float \rbrace$ | Maximum of two inputs
-| $empty$  | $([a]):Bool$    | Check if list is empty
-| $length$ | $([a]):Int$     | List length
-| $head$   | $([a]):a$       | Head value of the list
-| $tail$   | $([a]):[a]$     | Tail of the list (sublist starting from 2nd element)
-| $append$ | $([a], [a]):[a]$ | Appends two lists
-| $at$     | $([a], Int):a$  | Extracts specific list element
 | $step$   | $(Float, Float):Float$ | Step function
 | $linearstep$ | $(Float, Float, Float):Float$ | Linear step function
 | $smoothstep$ | $(Float, Float, Float):Float$ | Smooth step function
@@ -160,7 +155,16 @@ These variables can be only evaluated at runtime.
 | $hashidx$    | $(IndexVector):Float$ | Hash function for index vectors, returns value in range $[0..1)$
 | $hashidx2$   | $(IndexVector, Int):Float$ | Hash function for index vectors with seed, returns value in range $[0..1)$
 | $noise$      | $(Float):Float$ | Noise function, returns value in range $[0..1)$
-
+| $empty$      | $([a]):Bool$    | Checks if the list is empty
+| $length$     | $([a]):Int$     | Number of elements in the list
+| $head$       | $([a]):a$       | Head value of the list
+| $tail$       | $([a]):[a]$     | Tail of the list (sublist starting from 2nd element)
+| $append$     | $([a], [a]):[a]$ | Appends two lists
+| $at$         | $([a], Int):a$  | Extracts specific list element
+| $map$        | $((a):b, [a]):[b]$ | Applies a function to all elements of the list
+| $filter$     | $((a):Bool, [a]):[a]$ | Filters elements of the list via a filter function
+| $foldl$      | $((a, b):a, a, [b]):a$ | Reduces the list by applying binary function to all list elements (left side)
+| $foldr$      | $((b, a):a, a, [b]):a$ | Reduces the list by applying binary function to all list elements (right side)
 
 
 ### Supported operators (by increasing precedence)
@@ -197,5 +201,5 @@ For example, lists and higher level functions must be reduced before GLSL can be
 Thus the following sample is valid but can not be compiled to GLSL as it uses runtime variable $P$:
 
 ```
-(if P.x < 0 then \(x:Float):Float->x else \(x:Float):Float->0)(5)
+(if P.x < 0 then \(x:Float):Float -> x else \(x:Float):Float -> 0)(5)
 ```
