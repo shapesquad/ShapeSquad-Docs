@@ -161,6 +161,7 @@ These variables can be only evaluated at runtime.
 | $tail$       | $([a]):[a]$     | Tail of the list (sublist starting from 2nd element)
 | $append$     | $([a], [a]):[a]$ | Appends two lists
 | $at$         | $([a], Int):a$  | Extracts specific list element
+| $range$      | $(Int, Int):[Int]$ | Generates a consecutive range of integers, given first element and number of elements
 | $map$        | $((a):b, [a]):[b]$ | Applies a function to all elements of the list
 | $filter$     | $((a):Bool, [a]):[a]$ | Filters elements of the list via a filter function
 | $foldl$      | $((a, b):a, a, [b]):a$ | Reduces the list by applying binary function to all list elements (left side)
