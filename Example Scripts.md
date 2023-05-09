@@ -83,6 +83,25 @@ in 1
 remap(ranges)
 ```
 
+### Map function
+```
+let b = \(a:Int): Int->a*2 in 
+map(b, [1,2])
+```
+
+### Filter function
+```
+let a = \(b:Int):Bool->b>1 in
+   filter(a, [1,2])
+```
+
+### Range function
+```
+range(1,10)
+```
+
+
+
 ### Recursive sum
 ```
 letrec 
