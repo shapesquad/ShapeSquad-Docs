@@ -5,11 +5,12 @@
 <maxtime>6.000000000e+01</maxtime>
 <currenttime>0.000000000e+00</currenttime>
 <assetlocations class_id="0" tracking_level="0" version="0">
-	<count>3</count>
+	<count>4</count>
 	<item_version>0</item_version>
 	<item>Uniform Repeat.sqa</item>
 	<item>Height to Normal.sqa</item>
 	<item>Uniform Repeat (Color).sqa</item>
+	<item>Scatter Points.sqa</item>
 </assetlocations>
 </boost_serialization>
 
