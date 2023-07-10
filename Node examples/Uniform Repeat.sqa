@@ -2,26 +2,33 @@
 <!DOCTYPE boost_serialization>
 <boost_serialization signature="serialization::archive" version="19">
 <nodeGraph class_id="0" tracking_level="0" version="1">
-	<px class_id="1" tracking_level="1" version="0" object_id="_0">
+	<px class_id="1" tracking_level="1" version="1" object_id="_0">
 		<name>Uniform Repeat</name>
+		<description></description>
 		<uuid>56365a31-dd86-48da-b2f9-199adec8fbd9</uuid>
-		<sourceURI>C:/Users/R/Documents/3d/shapesquad/ShapeSquad-Docs/Node examples/Uniform Repeat.sqa</sourceURI>
+		<sourceURI>C:/Users/Marten/Desktop/Shapesquad/ShapeSquad-Docs/Node examples/Uniform Repeat.sqa</sourceURI>
 		<nodes class_id="2" tracking_level="0" version="0">
 			<count>5</count>
 			<item_version>1</item_version>
 			<item class_id="3" tracking_level="0" version="1">
-				<px class_id="4" tracking_level="1" version="0" object_id="_1">
+				<px class_id="4" tracking_level="1" version="2" object_id="_1">
 					<name>Rectangle</name>
-					<nodeMetaInfo class_id="5" tracking_level="0" version="1">
-						<px class_id="6" tracking_level="1" version="0" object_id="_2">
+					<description></description>
+					<metaInfo class_id="5" tracking_level="0" version="1">
+						<px class_id="6" tracking_level="1" version="3" object_id="_2">
 							<name>Rectangle</name>
+							<description></description>
 							<variant class_id="7" tracking_level="0" version="0">
 								<index>4</index>
 								<value class_id="8" tracking_level="0" version="0">
 									<id>RectSDF2_v2</id>
 								</value>
 							</variant>
-							<categories class_id="9" tracking_level="0" version="0">
+							<tags class_id="9" tracking_level="0" version="0">
+								<count>0</count>
+								<item_version>0</item_version>
+							</tags>
+							<categories>
 								<count>1</count>
 								<item_version>0</item_version>
 								<item>SDF2D/Primitives</item>
@@ -31,250 +38,271 @@
 								<item_version>0</item_version>
 								<item class_id="11" tracking_level="0" version="0">
 									<first>radius</first>
-									<second class_id="12" tracking_level="0" version="0">
-										<index>4</index>
-										<name>Radius</name>
-										<type class_id="13" tracking_level="0" version="0">
-											<root class_id="14" tracking_level="0" version="0">
-												<index>0</index>
-												<value>3</value>
-											</root>
-										</type>
-										<defaultValue class_id="15" tracking_level="0" version="0">
-											<valid>1</valid>
-											<value class_id="16" tracking_level="0" version="0">
-												<index>3</index>
-												<value>0.000000000e+00</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>0.000000000e+00</value>
-											</value>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.000000015e-01</value>
-											</value>
-										</valueStep>
-										<options class_id="17" tracking_level="0" version="0">
-											<valid>0</valid>
-										</options>
-										<precondition class_id="18" tracking_level="0" version="0">
-											<valid>0</valid>
-										</precondition>
+									<second class_id="12" tracking_level="0" version="1">
+										<px class_id="13" tracking_level="1" version="1" object_id="_3">
+											<index>4</index>
+											<name>Radius</name>
+											<description></description>
+											<type class_id="14" tracking_level="0" version="0">
+												<root class_id="15" tracking_level="0" version="0">
+													<index>0</index>
+													<value>3</value>
+												</root>
+											</type>
+											<defaultValue class_id="16" tracking_level="0" version="0">
+												<valid>1</valid>
+												<value class_id="17" tracking_level="0" version="0">
+													<index>3</index>
+													<value>0.000000000e+00</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>0.000000000e+00</value>
+												</value>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.000000015e-01</value>
+												</value>
+											</valueStep>
+											<options class_id="18" tracking_level="0" version="0">
+												<valid>0</valid>
+											</options>
+											<precondition class_id="19" tracking_level="0" version="0">
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 								<item>
 									<first>sx</first>
 									<second>
-										<index>2</index>
-										<name>Size X</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>3</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>5.000000000e-01</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>0.000000000e+00</value>
-											</value>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.000000015e-01</value>
-											</value>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>0</valid>
-										</precondition>
+										<px class_id_reference="13" object_id="_4">
+											<index>2</index>
+											<name>Size X</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>3</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>5.000000000e-01</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>0.000000000e+00</value>
+												</value>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.000000015e-01</value>
+												</value>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 								<item>
 									<first>sy</first>
 									<second>
-										<index>3</index>
-										<name>Size Y</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>3</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>5.000000000e-01</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>0.000000000e+00</value>
-											</value>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.000000015e-01</value>
-											</value>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>0</valid>
-										</precondition>
+										<px class_id_reference="13" object_id="_5">
+											<index>3</index>
+											<name>Size Y</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>3</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>5.000000000e-01</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>0.000000000e+00</value>
+												</value>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.000000015e-01</value>
+												</value>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 								<item>
 									<first>x</first>
 									<second>
-										<index>0</index>
-										<name>Origin X</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>3</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>0.000000000e+00</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>0</valid>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.000000015e-01</value>
-											</value>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>0</valid>
-										</precondition>
+										<px class_id_reference="13" object_id="_6">
+											<index>0</index>
+											<name>Origin X</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>3</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>0.000000000e+00</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>0</valid>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.000000015e-01</value>
+												</value>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 								<item>
 									<first>y</first>
 									<second>
-										<index>1</index>
-										<name>Origin Y</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>3</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>0.000000000e+00</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>0</valid>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.000000015e-01</value>
-											</value>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>0</valid>
-										</precondition>
+										<px class_id_reference="13" object_id="_7">
+											<index>1</index>
+											<name>Origin Y</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>3</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>0.000000000e+00</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>0</valid>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.000000015e-01</value>
+												</value>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 							</inputMap>
-							<outputMap class_id="19" tracking_level="0" version="0">
+							<outputMap class_id="20" tracking_level="0" version="0">
 								<count>1</count>
 								<item_version>0</item_version>
-								<item class_id="20" tracking_level="0" version="0">
+								<item class_id="21" tracking_level="0" version="0">
 									<first></first>
-									<second class_id="21" tracking_level="0" version="0">
-										<index>0</index>
-										<name></name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>7</value>
-											</root>
-										</type>
+									<second class_id="22" tracking_level="0" version="1">
+										<px class_id="23" tracking_level="1" version="1" object_id="_8">
+											<index>0</index>
+											<name></name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>7</value>
+												</root>
+											</type>
+										</px>
 									</second>
 								</item>
 							</outputMap>
 						</px>
-					</nodeMetaInfo>
-					<inputMap class_id="22" tracking_level="0" version="0">
+					</metaInfo>
+					<inputMap class_id="24" tracking_level="0" version="0">
 						<count>5</count>
 						<item_version>0</item_version>
-						<item class_id="23" tracking_level="0" version="0">
+						<item class_id="25" tracking_level="0" version="0">
 							<first>radius</first>
-							<second class_id="24" tracking_level="0" version="0">
+							<second class_id="26" tracking_level="0" version="2">
 								<type>
 									<root>
 										<index>0</index>
 										<value>3</value>
 									</root>
 								</type>
-								<root class_id="25" tracking_level="0" version="0">
+								<root class_id="27" tracking_level="0" version="0">
 									<index>0</index>
 									<value>
 										<index>3</index>
 										<value>0.000000000e+00</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_3"></px>
+								</metaInfo>
 							</second>
 						</item>
 						<item>
@@ -293,6 +321,9 @@
 										<value>5.000000000e-01</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_4"></px>
+								</metaInfo>
 							</second>
 						</item>
 						<item>
@@ -311,6 +342,9 @@
 										<value>5.000000000e-01</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_5"></px>
+								</metaInfo>
 							</second>
 						</item>
 						<item>
@@ -329,6 +363,9 @@
 										<value>0.000000000e+00</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_6"></px>
+								</metaInfo>
 							</second>
 						</item>
 						<item>
@@ -347,28 +384,34 @@
 										<value>0.000000000e+00</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_7"></px>
+								</metaInfo>
 							</second>
 						</item>
 					</inputMap>
-					<outputMap class_id="26" tracking_level="0" version="0">
+					<outputMap class_id="28" tracking_level="0" version="0">
 						<count>1</count>
 						<item_version>0</item_version>
-						<item class_id="27" tracking_level="0" version="0">
+						<item class_id="29" tracking_level="0" version="0">
 							<first></first>
-							<second class_id="28" tracking_level="0" version="0">
+							<second class_id="30" tracking_level="0" version="1">
 								<type>
 									<root>
 										<index>0</index>
 										<value>7</value>
 									</root>
 								</type>
+								<metaInfo>
+									<px class_id_reference="23" object_id_reference="_8"></px>
+								</metaInfo>
 							</second>
 						</item>
 					</outputMap>
-					<metaDataMap class_id="29" tracking_level="0" version="0">
+					<metaDataMap class_id="31" tracking_level="0" version="0">
 						<count>9</count>
 						<item_version>0</item_version>
-						<item class_id="30" tracking_level="0" version="0">
+						<item class_id="32" tracking_level="0" version="0">
 							<first>renderer.distexp</first>
 							<second>1200</second>
 						</item>
@@ -408,17 +451,23 @@
 				</px>
 			</item>
 			<item>
-				<px class_id_reference="4" object_id="_3">
+				<px class_id_reference="4" object_id="_9">
 					<name>Uniform Repeat*</name>
-					<nodeMetaInfo>
-						<px class_id_reference="6" object_id="_4">
-							<name>Uniform Repeat*</name>
+					<description></description>
+					<metaInfo>
+						<px class_id_reference="6" object_id="_10">
+							<name>Uniform Repeat</name>
+							<description></description>
 							<variant>
 								<index>4</index>
 								<value>
 									<id>UniformRepeatSDF2_v1</id>
 								</value>
 							</variant>
+							<tags>
+								<count>0</count>
+								<item_version>0</item_version>
+							</tags>
 							<categories>
 								<count>1</count>
 								<item_version>0</item_version>
@@ -430,445 +479,497 @@
 								<item>
 									<first>cx</first>
 									<second>
-										<index>3</index>
-										<name>Spacing X</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>3</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.000000000e+00</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>9.999999776e-03</value>
-											</value>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.000000015e-01</value>
-											</value>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>0</valid>
-										</precondition>
+										<px class_id_reference="13" object_id="_11">
+											<index>3</index>
+											<name>Spacing X</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>3</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.000000000e+00</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>9.999999776e-03</value>
+												</value>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.000000015e-01</value>
+												</value>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 								<item>
 									<first>cy</first>
 									<second>
-										<index>4</index>
-										<name>Spacing Y</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>3</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.000000000e+00</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>9.999999776e-03</value>
-											</value>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.000000015e-01</value>
-											</value>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>0</valid>
-										</precondition>
+										<px class_id_reference="13" object_id="_12">
+											<index>4</index>
+											<name>Spacing Y</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>3</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.000000000e+00</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>9.999999776e-03</value>
+												</value>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.000000015e-01</value>
+												</value>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 								<item>
 									<first>infinite</first>
 									<second>
-										<index>7</index>
-										<name>Infinite</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>1</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>1</index>
-												<value>0</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>0</valid>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>0</valid>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>0</valid>
-										</precondition>
+										<px class_id_reference="13" object_id="_13">
+											<index>7</index>
+											<name>Infinite</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>1</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>1</index>
+													<value>0</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>0</valid>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>0</valid>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 								<item>
 									<first>lx</first>
 									<second>
-										<index>5</index>
-										<name>Limit X</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>3</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.500000000e+00</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>0.000000000e+00</value>
-											</value>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.000000015e-01</value>
-											</value>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>0</valid>
-										</precondition>
+										<px class_id_reference="13" object_id="_14">
+											<index>5</index>
+											<name>Limit X</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>3</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.500000000e+00</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>0.000000000e+00</value>
+												</value>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.000000015e-01</value>
+												</value>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 								<item>
 									<first>ly</first>
 									<second>
-										<index>6</index>
-										<name>Limit Y</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>3</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.500000000e+00</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>0.000000000e+00</value>
-											</value>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.000000015e-01</value>
-											</value>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>0</valid>
-										</precondition>
+										<px class_id_reference="13" object_id="_15">
+											<index>6</index>
+											<name>Limit Y</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>3</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.500000000e+00</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>0.000000000e+00</value>
+												</value>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.000000015e-01</value>
+												</value>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 								<item>
 									<first>nx</first>
 									<second>
-										<index>8</index>
-										<name>Count X</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>2</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>2</index>
-												<value>3</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>1</valid>
-											<value>
-												<index>2</index>
-												<value>1</value>
-											</value>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>1</valid>
-											<value>
-												<index>2</index>
-												<value>1</value>
-											</value>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>1</valid>
-											<value class_id="31" tracking_level="0" version="0">
-												<variant class_id="32" tracking_level="0" version="0">
-													<index>4</index>
-													<value class_id="33" tracking_level="0" version="0">
-														<object class_id="34" tracking_level="0" version="0">
-															<index>1</index>
-															<expr>
-																<variant>
-																	<index>1</index>
-																	<value class_id="35" tracking_level="0" version="0">
-																		<name>infinite</name>
-																	</value>
-																</variant>
-															</expr>
-														</object>
-													</value>
-												</variant>
-											</value>
-										</precondition>
+										<px class_id_reference="13" object_id="_16">
+											<index>8</index>
+											<name>Count X</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>2</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>2</index>
+													<value>3</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>1</valid>
+												<value>
+													<index>2</index>
+													<value>1</value>
+												</value>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>1</valid>
+												<value>
+													<index>2</index>
+													<value>1</value>
+												</value>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>1</valid>
+												<value class_id="33" tracking_level="0" version="0">
+													<type>
+														<root>
+															<index>0</index>
+															<value>1</value>
+														</root>
+													</type>
+													<variant class_id="34" tracking_level="0" version="0">
+														<index>7</index>
+														<value class_id="35" tracking_level="0" version="0">
+															<object class_id="36" tracking_level="0" version="0">
+																<index>1</index>
+																<expr>
+																	<type>
+																		<root>
+																			<index>0</index>
+																			<value>1</value>
+																		</root>
+																	</type>
+																	<variant>
+																		<index>1</index>
+																		<value class_id="37" tracking_level="0" version="0">
+																			<name>infinite</name>
+																		</value>
+																	</variant>
+																</expr>
+															</object>
+														</value>
+													</variant>
+												</value>
+											</precondition>
+										</px>
 									</second>
 								</item>
 								<item>
 									<first>ny</first>
 									<second>
-										<index>9</index>
-										<name>Count Y</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>2</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>2</index>
-												<value>3</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>1</valid>
-											<value>
-												<index>2</index>
-												<value>1</value>
-											</value>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>1</valid>
-											<value>
-												<index>2</index>
-												<value>1</value>
-											</value>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>1</valid>
-											<value>
-												<variant>
-													<index>4</index>
-													<value>
-														<object>
-															<index>1</index>
-															<expr>
-																<variant>
-																	<index>1</index>
-																	<value>
-																		<name>infinite</name>
-																	</value>
-																</variant>
-															</expr>
-														</object>
-													</value>
-												</variant>
-											</value>
-										</precondition>
+										<px class_id_reference="13" object_id="_17">
+											<index>9</index>
+											<name>Count Y</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>2</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>2</index>
+													<value>3</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>1</valid>
+												<value>
+													<index>2</index>
+													<value>1</value>
+												</value>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>1</valid>
+												<value>
+													<index>2</index>
+													<value>1</value>
+												</value>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>1</valid>
+												<value>
+													<type>
+														<root>
+															<index>0</index>
+															<value>1</value>
+														</root>
+													</type>
+													<variant>
+														<index>7</index>
+														<value>
+															<object>
+																<index>1</index>
+																<expr>
+																	<type>
+																		<root>
+																			<index>0</index>
+																			<value>1</value>
+																		</root>
+																	</type>
+																	<variant>
+																		<index>1</index>
+																		<value>
+																			<name>infinite</name>
+																		</value>
+																	</variant>
+																</expr>
+															</object>
+														</value>
+													</variant>
+												</value>
+											</precondition>
+										</px>
 									</second>
 								</item>
 								<item>
 									<first>sdf</first>
 									<second>
-										<index>0</index>
-										<name>SDF</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>7</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>7</index>
-												<value class_id="36" tracking_level="0" version="0">
-													<distance>0.000000000e+00</distance>
+										<px class_id_reference="13" object_id="_18">
+											<index>0</index>
+											<name>SDF</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>7</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>7</index>
+													<value class_id="38" tracking_level="0" version="1"></value>
 												</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>0</valid>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>0</valid>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>0</valid>
-										</precondition>
+											</defaultValue>
+											<minValue>
+												<valid>0</valid>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>0</valid>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 								<item>
 									<first>x</first>
 									<second>
-										<index>1</index>
-										<name>Origin X</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>3</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>0.000000000e+00</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>0</valid>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.000000015e-01</value>
-											</value>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>0</valid>
-										</precondition>
+										<px class_id_reference="13" object_id="_19">
+											<index>1</index>
+											<name>Origin X</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>3</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>0.000000000e+00</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>0</valid>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.000000015e-01</value>
+												</value>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 								<item>
 									<first>y</first>
 									<second>
-										<index>2</index>
-										<name>Origin Y</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>3</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>0.000000000e+00</value>
-											</value>
-										</defaultValue>
-										<minValue>
-											<valid>0</valid>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>1</valid>
-											<value>
-												<index>3</index>
-												<value>1.000000015e-01</value>
-											</value>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>0</valid>
-										</precondition>
+										<px class_id_reference="13" object_id="_20">
+											<index>2</index>
+											<name>Origin Y</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>3</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>0.000000000e+00</value>
+												</value>
+											</defaultValue>
+											<minValue>
+												<valid>0</valid>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>1</valid>
+												<value>
+													<index>3</index>
+													<value>1.000000015e-01</value>
+												</value>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 							</inputMap>
@@ -878,19 +979,22 @@
 								<item>
 									<first></first>
 									<second>
-										<index>0</index>
-										<name></name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>7</value>
-											</root>
-										</type>
+										<px class_id_reference="23" object_id="_21">
+											<index>0</index>
+											<name></name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>7</value>
+												</root>
+											</type>
+										</px>
 									</second>
 								</item>
 							</outputMap>
 						</px>
-					</nodeMetaInfo>
+					</metaInfo>
 					<inputMap>
 						<count>10</count>
 						<item_version>0</item_version>
@@ -910,6 +1014,9 @@
 										<value>1.200000048e+00</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_11"></px>
+								</metaInfo>
 							</second>
 						</item>
 						<item>
@@ -928,6 +1035,9 @@
 										<value>1.200000048e+00</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_12"></px>
+								</metaInfo>
 							</second>
 						</item>
 						<item>
@@ -946,6 +1056,9 @@
 										<value>0</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_13"></px>
+								</metaInfo>
 							</second>
 						</item>
 						<item>
@@ -964,6 +1077,9 @@
 										<value>1.500000000e+00</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_14"></px>
+								</metaInfo>
 							</second>
 						</item>
 						<item>
@@ -982,6 +1098,9 @@
 										<value>1.500000000e+00</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_15"></px>
+								</metaInfo>
 							</second>
 						</item>
 						<item>
@@ -1000,6 +1119,9 @@
 										<value>3</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_16"></px>
+								</metaInfo>
 							</second>
 						</item>
 						<item>
@@ -1018,6 +1140,9 @@
 										<value>3</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_17"></px>
+								</metaInfo>
 							</second>
 						</item>
 						<item>
@@ -1031,20 +1156,26 @@
 								</type>
 								<root>
 									<index>2</index>
-									<value class_id="37" tracking_level="0" version="0">
+									<value class_id="39" tracking_level="0" version="0">
 										<outputId></outputId>
 										<node>
-											<px class_id_reference="4" object_id="_5">
+											<px class_id_reference="4" object_id="_22">
 												<name>Rotate - only 3d column</name>
-												<nodeMetaInfo>
-													<px class_id_reference="6" object_id="_6">
+												<description></description>
+												<metaInfo>
+													<px class_id_reference="6" object_id="_23">
 														<name>Rotate</name>
+														<description></description>
 														<variant>
 															<index>4</index>
 															<value>
 																<id>RotateSDF2_v1</id>
 															</value>
 														</variant>
+														<tags>
+															<count>0</count>
+															<item_version>0</item_version>
+														</tags>
 														<categories>
 															<count>1</count>
 															<item_version>0</item_version>
@@ -1056,163 +1187,173 @@
 															<item>
 																<first>angle</first>
 																<second>
-																	<index>3</index>
-																	<name>Angle</name>
-																	<type>
-																		<root>
-																			<index>0</index>
-																			<value>3</value>
-																		</root>
-																	</type>
-																	<defaultValue>
-																		<valid>1</valid>
-																		<value>
-																			<index>3</index>
-																			<value>0.000000000e+00</value>
-																		</value>
-																	</defaultValue>
-																	<minValue>
-																		<valid>1</valid>
-																		<value>
-																			<index>3</index>
-																			<value>0.000000000e+00</value>
-																		</value>
-																	</minValue>
-																	<maxValue>
-																		<valid>1</valid>
-																		<value>
-																			<index>3</index>
-																			<value>3.600000000e+02</value>
-																		</value>
-																	</maxValue>
-																	<valueStep>
-																		<valid>1</valid>
-																		<value>
-																			<index>3</index>
-																			<value>1.000000000e+01</value>
-																		</value>
-																	</valueStep>
-																	<options>
-																		<valid>0</valid>
-																	</options>
-																	<precondition>
-																		<valid>0</valid>
-																	</precondition>
+																	<px class_id_reference="13" object_id="_24">
+																		<index>3</index>
+																		<name>Angle</name>
+																		<description></description>
+																		<type>
+																			<root>
+																				<index>0</index>
+																				<value>3</value>
+																			</root>
+																		</type>
+																		<defaultValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>0.000000000e+00</value>
+																			</value>
+																		</defaultValue>
+																		<minValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>0.000000000e+00</value>
+																			</value>
+																		</minValue>
+																		<maxValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>3.600000000e+02</value>
+																			</value>
+																		</maxValue>
+																		<valueStep>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>1.000000000e+01</value>
+																			</value>
+																		</valueStep>
+																		<options>
+																			<valid>0</valid>
+																		</options>
+																		<precondition>
+																			<valid>0</valid>
+																		</precondition>
+																	</px>
 																</second>
 															</item>
 															<item>
 																<first>sdf</first>
 																<second>
-																	<index>0</index>
-																	<name>SDF</name>
-																	<type>
-																		<root>
-																			<index>0</index>
-																			<value>7</value>
-																		</root>
-																	</type>
-																	<defaultValue>
-																		<valid>1</valid>
-																		<value>
-																			<index>7</index>
+																	<px class_id_reference="13" object_id="_25">
+																		<index>0</index>
+																		<name>SDF</name>
+																		<description></description>
+																		<type>
+																			<root>
+																				<index>0</index>
+																				<value>7</value>
+																			</root>
+																		</type>
+																		<defaultValue>
+																			<valid>1</valid>
 																			<value>
-																				<distance>0.000000000e+00</distance>
+																				<index>7</index>
+																				<value></value>
 																			</value>
-																		</value>
-																	</defaultValue>
-																	<minValue>
-																		<valid>0</valid>
-																	</minValue>
-																	<maxValue>
-																		<valid>0</valid>
-																	</maxValue>
-																	<valueStep>
-																		<valid>0</valid>
-																	</valueStep>
-																	<options>
-																		<valid>0</valid>
-																	</options>
-																	<precondition>
-																		<valid>0</valid>
-																	</precondition>
+																		</defaultValue>
+																		<minValue>
+																			<valid>0</valid>
+																		</minValue>
+																		<maxValue>
+																			<valid>0</valid>
+																		</maxValue>
+																		<valueStep>
+																			<valid>0</valid>
+																		</valueStep>
+																		<options>
+																			<valid>0</valid>
+																		</options>
+																		<precondition>
+																			<valid>0</valid>
+																		</precondition>
+																	</px>
 																</second>
 															</item>
 															<item>
 																<first>x</first>
 																<second>
-																	<index>1</index>
-																	<name>Origin X</name>
-																	<type>
-																		<root>
-																			<index>0</index>
-																			<value>3</value>
-																		</root>
-																	</type>
-																	<defaultValue>
-																		<valid>1</valid>
-																		<value>
-																			<index>3</index>
-																			<value>0.000000000e+00</value>
-																		</value>
-																	</defaultValue>
-																	<minValue>
-																		<valid>0</valid>
-																	</minValue>
-																	<maxValue>
-																		<valid>0</valid>
-																	</maxValue>
-																	<valueStep>
-																		<valid>1</valid>
-																		<value>
-																			<index>3</index>
-																			<value>1.000000015e-01</value>
-																		</value>
-																	</valueStep>
-																	<options>
-																		<valid>0</valid>
-																	</options>
-																	<precondition>
-																		<valid>0</valid>
-																	</precondition>
+																	<px class_id_reference="13" object_id="_26">
+																		<index>1</index>
+																		<name>Origin X</name>
+																		<description></description>
+																		<type>
+																			<root>
+																				<index>0</index>
+																				<value>3</value>
+																			</root>
+																		</type>
+																		<defaultValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>0.000000000e+00</value>
+																			</value>
+																		</defaultValue>
+																		<minValue>
+																			<valid>0</valid>
+																		</minValue>
+																		<maxValue>
+																			<valid>0</valid>
+																		</maxValue>
+																		<valueStep>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>1.000000015e-01</value>
+																			</value>
+																		</valueStep>
+																		<options>
+																			<valid>0</valid>
+																		</options>
+																		<precondition>
+																			<valid>0</valid>
+																		</precondition>
+																	</px>
 																</second>
 															</item>
 															<item>
 																<first>y</first>
 																<second>
-																	<index>2</index>
-																	<name>Origin Y</name>
-																	<type>
-																		<root>
-																			<index>0</index>
-																			<value>3</value>
-																		</root>
-																	</type>
-																	<defaultValue>
-																		<valid>1</valid>
-																		<value>
-																			<index>3</index>
-																			<value>0.000000000e+00</value>
-																		</value>
-																	</defaultValue>
-																	<minValue>
-																		<valid>0</valid>
-																	</minValue>
-																	<maxValue>
-																		<valid>0</valid>
-																	</maxValue>
-																	<valueStep>
-																		<valid>1</valid>
-																		<value>
-																			<index>3</index>
-																			<value>1.000000015e-01</value>
-																		</value>
-																	</valueStep>
-																	<options>
-																		<valid>0</valid>
-																	</options>
-																	<precondition>
-																		<valid>0</valid>
-																	</precondition>
+																	<px class_id_reference="13" object_id="_27">
+																		<index>2</index>
+																		<name>Origin Y</name>
+																		<description></description>
+																		<type>
+																			<root>
+																				<index>0</index>
+																				<value>3</value>
+																			</root>
+																		</type>
+																		<defaultValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>0.000000000e+00</value>
+																			</value>
+																		</defaultValue>
+																		<minValue>
+																			<valid>0</valid>
+																		</minValue>
+																		<maxValue>
+																			<valid>0</valid>
+																		</maxValue>
+																		<valueStep>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>1.000000015e-01</value>
+																			</value>
+																		</valueStep>
+																		<options>
+																			<valid>0</valid>
+																		</options>
+																		<precondition>
+																			<valid>0</valid>
+																		</precondition>
+																	</px>
 																</second>
 															</item>
 														</inputMap>
@@ -1222,19 +1363,22 @@
 															<item>
 																<first></first>
 																<second>
-																	<index>0</index>
-																	<name></name>
-																	<type>
-																		<root>
-																			<index>0</index>
-																			<value>7</value>
-																		</root>
-																	</type>
+																	<px class_id_reference="23" object_id="_28">
+																		<index>0</index>
+																		<name></name>
+																		<description></description>
+																		<type>
+																			<root>
+																				<index>0</index>
+																				<value>7</value>
+																			</root>
+																		</type>
+																	</px>
 																</second>
 															</item>
 														</outputMap>
 													</px>
-												</nodeMetaInfo>
+												</metaInfo>
 												<inputMap>
 													<count>4</count>
 													<item_version>0</item_version>
@@ -1249,15 +1393,15 @@
 															</type>
 															<root>
 																<index>1</index>
-																<value class_id="38" tracking_level="0" version="0">
-																	<expr class_id="39" tracking_level="0" version="0">
+																<value class_id="40" tracking_level="0" version="0">
+																	<expr>
 																		<type>
 																			<root>
 																				<index>0</index>
 																				<value>3</value>
 																			</root>
 																		</type>
-																		<variant class_id="40" tracking_level="0" version="0">
+																		<variant>
 																			<index>9</index>
 																			<value class_id="41" tracking_level="0" version="0">
 																				<object class_id="42" tracking_level="0" version="0">
@@ -1534,6 +1678,9 @@
 																	</expr>
 																</value>
 															</root>
+															<metaInfo>
+																<px class_id_reference="13" object_id_reference="_24"></px>
+															</metaInfo>
 														</second>
 													</item>
 													<item>
@@ -1550,17 +1697,23 @@
 																<value>
 																	<outputId></outputId>
 																	<node>
-																		<px class_id_reference="4" object_id="_7">
+																		<px class_id_reference="4" object_id="_29">
 																			<name>Scale - all items</name>
-																			<nodeMetaInfo>
-																				<px class_id_reference="6" object_id="_8">
+																			<description></description>
+																			<metaInfo>
+																				<px class_id_reference="6" object_id="_30">
 																					<name>Scale</name>
+																					<description></description>
 																					<variant>
 																						<index>4</index>
 																						<value>
 																							<id>ScaleSDF2_v1</id>
 																						</value>
 																					</variant>
+																					<tags>
+																						<count>0</count>
+																						<item_version>0</item_version>
+																					</tags>
 																					<categories>
 																						<count>1</count>
 																						<item_version>0</item_version>
@@ -1572,159 +1725,169 @@
 																						<item>
 																							<first>scale</first>
 																							<second>
-																								<index>3</index>
-																								<name>Scale</name>
-																								<type>
-																									<root>
-																										<index>0</index>
-																										<value>3</value>
-																									</root>
-																								</type>
-																								<defaultValue>
-																									<valid>1</valid>
-																									<value>
-																										<index>3</index>
-																										<value>1.000000000e+00</value>
-																									</value>
-																								</defaultValue>
-																								<minValue>
-																									<valid>1</valid>
-																									<value>
-																										<index>3</index>
-																										<value>0.000000000e+00</value>
-																									</value>
-																								</minValue>
-																								<maxValue>
-																									<valid>0</valid>
-																								</maxValue>
-																								<valueStep>
-																									<valid>1</valid>
-																									<value>
-																										<index>3</index>
-																										<value>1.000000015e-01</value>
-																									</value>
-																								</valueStep>
-																								<options>
-																									<valid>0</valid>
-																								</options>
-																								<precondition>
-																									<valid>0</valid>
-																								</precondition>
+																								<px class_id_reference="13" object_id="_31">
+																									<index>3</index>
+																									<name>Scale</name>
+																									<description></description>
+																									<type>
+																										<root>
+																											<index>0</index>
+																											<value>3</value>
+																										</root>
+																									</type>
+																									<defaultValue>
+																										<valid>1</valid>
+																										<value>
+																											<index>3</index>
+																											<value>1.000000000e+00</value>
+																										</value>
+																									</defaultValue>
+																									<minValue>
+																										<valid>1</valid>
+																										<value>
+																											<index>3</index>
+																											<value>0.000000000e+00</value>
+																										</value>
+																									</minValue>
+																									<maxValue>
+																										<valid>0</valid>
+																									</maxValue>
+																									<valueStep>
+																										<valid>1</valid>
+																										<value>
+																											<index>3</index>
+																											<value>1.000000015e-01</value>
+																										</value>
+																									</valueStep>
+																									<options>
+																										<valid>0</valid>
+																									</options>
+																									<precondition>
+																										<valid>0</valid>
+																									</precondition>
+																								</px>
 																							</second>
 																						</item>
 																						<item>
 																							<first>sdf</first>
 																							<second>
-																								<index>0</index>
-																								<name>SDF</name>
-																								<type>
-																									<root>
-																										<index>0</index>
-																										<value>7</value>
-																									</root>
-																								</type>
-																								<defaultValue>
-																									<valid>1</valid>
-																									<value>
-																										<index>7</index>
+																								<px class_id_reference="13" object_id="_32">
+																									<index>0</index>
+																									<name>SDF</name>
+																									<description></description>
+																									<type>
+																										<root>
+																											<index>0</index>
+																											<value>7</value>
+																										</root>
+																									</type>
+																									<defaultValue>
+																										<valid>1</valid>
 																										<value>
-																											<distance>0.000000000e+00</distance>
+																											<index>7</index>
+																											<value></value>
 																										</value>
-																									</value>
-																								</defaultValue>
-																								<minValue>
-																									<valid>0</valid>
-																								</minValue>
-																								<maxValue>
-																									<valid>0</valid>
-																								</maxValue>
-																								<valueStep>
-																									<valid>0</valid>
-																								</valueStep>
-																								<options>
-																									<valid>0</valid>
-																								</options>
-																								<precondition>
-																									<valid>0</valid>
-																								</precondition>
+																									</defaultValue>
+																									<minValue>
+																										<valid>0</valid>
+																									</minValue>
+																									<maxValue>
+																										<valid>0</valid>
+																									</maxValue>
+																									<valueStep>
+																										<valid>0</valid>
+																									</valueStep>
+																									<options>
+																										<valid>0</valid>
+																									</options>
+																									<precondition>
+																										<valid>0</valid>
+																									</precondition>
+																								</px>
 																							</second>
 																						</item>
 																						<item>
 																							<first>x</first>
 																							<second>
-																								<index>1</index>
-																								<name>Origin X</name>
-																								<type>
-																									<root>
-																										<index>0</index>
-																										<value>3</value>
-																									</root>
-																								</type>
-																								<defaultValue>
-																									<valid>1</valid>
-																									<value>
-																										<index>3</index>
-																										<value>0.000000000e+00</value>
-																									</value>
-																								</defaultValue>
-																								<minValue>
-																									<valid>0</valid>
-																								</minValue>
-																								<maxValue>
-																									<valid>0</valid>
-																								</maxValue>
-																								<valueStep>
-																									<valid>1</valid>
-																									<value>
-																										<index>3</index>
-																										<value>1.000000015e-01</value>
-																									</value>
-																								</valueStep>
-																								<options>
-																									<valid>0</valid>
-																								</options>
-																								<precondition>
-																									<valid>0</valid>
-																								</precondition>
+																								<px class_id_reference="13" object_id="_33">
+																									<index>1</index>
+																									<name>Origin X</name>
+																									<description></description>
+																									<type>
+																										<root>
+																											<index>0</index>
+																											<value>3</value>
+																										</root>
+																									</type>
+																									<defaultValue>
+																										<valid>1</valid>
+																										<value>
+																											<index>3</index>
+																											<value>0.000000000e+00</value>
+																										</value>
+																									</defaultValue>
+																									<minValue>
+																										<valid>0</valid>
+																									</minValue>
+																									<maxValue>
+																										<valid>0</valid>
+																									</maxValue>
+																									<valueStep>
+																										<valid>1</valid>
+																										<value>
+																											<index>3</index>
+																											<value>1.000000015e-01</value>
+																										</value>
+																									</valueStep>
+																									<options>
+																										<valid>0</valid>
+																									</options>
+																									<precondition>
+																										<valid>0</valid>
+																									</precondition>
+																								</px>
 																							</second>
 																						</item>
 																						<item>
 																							<first>y</first>
 																							<second>
-																								<index>2</index>
-																								<name>Origin Y</name>
-																								<type>
-																									<root>
-																										<index>0</index>
-																										<value>3</value>
-																									</root>
-																								</type>
-																								<defaultValue>
-																									<valid>1</valid>
-																									<value>
-																										<index>3</index>
-																										<value>0.000000000e+00</value>
-																									</value>
-																								</defaultValue>
-																								<minValue>
-																									<valid>0</valid>
-																								</minValue>
-																								<maxValue>
-																									<valid>0</valid>
-																								</maxValue>
-																								<valueStep>
-																									<valid>1</valid>
-																									<value>
-																										<index>3</index>
-																										<value>1.000000015e-01</value>
-																									</value>
-																								</valueStep>
-																								<options>
-																									<valid>0</valid>
-																								</options>
-																								<precondition>
-																									<valid>0</valid>
-																								</precondition>
+																								<px class_id_reference="13" object_id="_34">
+																									<index>2</index>
+																									<name>Origin Y</name>
+																									<description></description>
+																									<type>
+																										<root>
+																											<index>0</index>
+																											<value>3</value>
+																										</root>
+																									</type>
+																									<defaultValue>
+																										<valid>1</valid>
+																										<value>
+																											<index>3</index>
+																											<value>0.000000000e+00</value>
+																										</value>
+																									</defaultValue>
+																									<minValue>
+																										<valid>0</valid>
+																									</minValue>
+																									<maxValue>
+																										<valid>0</valid>
+																									</maxValue>
+																									<valueStep>
+																										<valid>1</valid>
+																										<value>
+																											<index>3</index>
+																											<value>1.000000015e-01</value>
+																										</value>
+																									</valueStep>
+																									<options>
+																										<valid>0</valid>
+																									</options>
+																									<precondition>
+																										<valid>0</valid>
+																									</precondition>
+																								</px>
 																							</second>
 																						</item>
 																					</inputMap>
@@ -1734,19 +1897,22 @@
 																						<item>
 																							<first></first>
 																							<second>
-																								<index>0</index>
-																								<name></name>
-																								<type>
-																									<root>
-																										<index>0</index>
-																										<value>7</value>
-																									</root>
-																								</type>
+																								<px class_id_reference="23" object_id="_35">
+																									<index>0</index>
+																									<name></name>
+																									<description></description>
+																									<type>
+																										<root>
+																											<index>0</index>
+																											<value>7</value>
+																										</root>
+																									</type>
+																								</px>
 																							</second>
 																						</item>
 																					</outputMap>
 																				</px>
-																			</nodeMetaInfo>
+																			</metaInfo>
 																			<inputMap>
 																				<count>4</count>
 																				<item_version>0</item_version>
@@ -1830,6 +1996,9 @@
 																								</expr>
 																							</value>
 																						</root>
+																						<metaInfo>
+																							<px class_id_reference="13" object_id_reference="_31"></px>
+																						</metaInfo>
 																					</second>
 																				</item>
 																				<item>
@@ -1850,6 +2019,9 @@
 																								</node>
 																							</value>
 																						</root>
+																						<metaInfo>
+																							<px class_id_reference="13" object_id_reference="_32"></px>
+																						</metaInfo>
 																					</second>
 																				</item>
 																				<item>
@@ -1868,6 +2040,9 @@
 																								<value>0.000000000e+00</value>
 																							</value>
 																						</root>
+																						<metaInfo>
+																							<px class_id_reference="13" object_id_reference="_33"></px>
+																						</metaInfo>
 																					</second>
 																				</item>
 																				<item>
@@ -1886,6 +2061,9 @@
 																								<value>0.000000000e+00</value>
 																							</value>
 																						</root>
+																						<metaInfo>
+																							<px class_id_reference="13" object_id_reference="_34"></px>
+																						</metaInfo>
 																					</second>
 																				</item>
 																			</inputMap>
@@ -1901,6 +2079,9 @@
 																								<value>7</value>
 																							</root>
 																						</type>
+																						<metaInfo>
+																							<px class_id_reference="23" object_id_reference="_35"></px>
+																						</metaInfo>
 																					</second>
 																				</item>
 																			</outputMap>
@@ -1952,6 +2133,9 @@
 																	</node>
 																</value>
 															</root>
+															<metaInfo>
+																<px class_id_reference="13" object_id_reference="_25"></px>
+															</metaInfo>
 														</second>
 													</item>
 													<item>
@@ -1970,6 +2154,9 @@
 																	<value>0.000000000e+00</value>
 																</value>
 															</root>
+															<metaInfo>
+																<px class_id_reference="13" object_id_reference="_26"></px>
+															</metaInfo>
 														</second>
 													</item>
 													<item>
@@ -1988,6 +2175,9 @@
 																	<value>0.000000000e+00</value>
 																</value>
 															</root>
+															<metaInfo>
+																<px class_id_reference="13" object_id_reference="_27"></px>
+															</metaInfo>
 														</second>
 													</item>
 												</inputMap>
@@ -2003,6 +2193,9 @@
 																	<value>7</value>
 																</root>
 															</type>
+															<metaInfo>
+																<px class_id_reference="23" object_id_reference="_28"></px>
+															</metaInfo>
 														</second>
 													</item>
 												</outputMap>
@@ -2054,6 +2247,9 @@
 										</node>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_18"></px>
+								</metaInfo>
 							</second>
 						</item>
 						<item>
@@ -2072,6 +2268,9 @@
 										<value>0.000000000e+00</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_19"></px>
+								</metaInfo>
 							</second>
 						</item>
 						<item>
@@ -2090,6 +2289,9 @@
 										<value>0.000000000e+00</value>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_20"></px>
+								</metaInfo>
 							</second>
 						</item>
 					</inputMap>
@@ -2105,6 +2307,9 @@
 										<value>7</value>
 									</root>
 								</type>
+								<metaInfo>
+									<px class_id_reference="23" object_id_reference="_21"></px>
+								</metaInfo>
 							</second>
 						</item>
 					</outputMap>
@@ -2151,17 +2356,23 @@
 				</px>
 			</item>
 			<item>
-				<px class_id_reference="4" object_id="_9">
+				<px class_id_reference="4" object_id="_36">
 					<name>Viewport</name>
-					<nodeMetaInfo>
-						<px class_id_reference="6" object_id="_10">
+					<description></description>
+					<metaInfo>
+						<px class_id_reference="6" object_id="_37">
 							<name>Viewport</name>
+							<description></description>
 							<variant>
 								<index>4</index>
 								<value>
 									<id>_Output_Viewport</id>
 								</value>
 							</variant>
+							<tags>
+								<count>0</count>
+								<item_version>0</item_version>
+							</tags>
 							<categories>
 								<count>0</count>
 								<item_version>0</item_version>
@@ -2172,32 +2383,35 @@
 								<item>
 									<first></first>
 									<second>
-										<index>0</index>
-										<name>Input</name>
-										<type>
-											<root>
-												<index>0</index>
-												<value>7</value>
-											</root>
-										</type>
-										<defaultValue>
-											<valid>0</valid>
-										</defaultValue>
-										<minValue>
-											<valid>0</valid>
-										</minValue>
-										<maxValue>
-											<valid>0</valid>
-										</maxValue>
-										<valueStep>
-											<valid>0</valid>
-										</valueStep>
-										<options>
-											<valid>0</valid>
-										</options>
-										<precondition>
-											<valid>0</valid>
-										</precondition>
+										<px class_id_reference="13" object_id="_38">
+											<index>0</index>
+											<name>Input</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>7</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>0</valid>
+											</defaultValue>
+											<minValue>
+												<valid>0</valid>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>0</valid>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
 									</second>
 								</item>
 							</inputMap>
@@ -2206,7 +2420,7 @@
 								<item_version>0</item_version>
 							</outputMap>
 						</px>
-					</nodeMetaInfo>
+					</metaInfo>
 					<inputMap>
 						<count>1</count>
 						<item_version>0</item_version>
@@ -2224,10 +2438,13 @@
 									<value>
 										<outputId></outputId>
 										<node>
-											<px class_id_reference="4" object_id_reference="_3"></px>
+											<px class_id_reference="4" object_id_reference="_9"></px>
 										</node>
 									</value>
 								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_38"></px>
+								</metaInfo>
 							</second>
 						</item>
 					</inputMap>
@@ -2278,10 +2495,10 @@
 				</px>
 			</item>
 			<item>
-				<px class_id_reference="4" object_id_reference="_7"></px>
+				<px class_id_reference="4" object_id_reference="_29"></px>
 			</item>
 			<item>
-				<px class_id_reference="4" object_id_reference="_5"></px>
+				<px class_id_reference="4" object_id_reference="_22"></px>
 			</item>
 		</nodes>
 	</px>
