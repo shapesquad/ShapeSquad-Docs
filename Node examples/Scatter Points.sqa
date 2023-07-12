@@ -8,7 +8,7 @@
 		<uuid>dcc0de69-e033-4e47-8277-1ed5468fb176</uuid>
 		<sourceURI>C:/Users/Marten/Desktop/Shapesquad/ShapeSquad-Docs/Node examples/Scatter Points.sqa</sourceURI>
 		<nodes class_id="2" tracking_level="0" version="0">
-			<count>9</count>
+			<count>10</count>
 			<item_version>1</item_version>
 			<item class_id="3" tracking_level="0" version="1">
 				<px class_id="4" tracking_level="1" version="2" object_id="_1">
@@ -4225,11 +4225,11 @@ rgba(r, g, b, 1)</second>
 																								</item>
 																								<item>
 																									<first>xpos</first>
-																									<second>-400.86956231850985</second>
+																									<second>-420.64093885095741</second>
 																								</item>
 																								<item>
 																									<first>ypos</first>
-																									<second>-69.565218714549957</second>
+																									<second>-33.064215885416004</second>
 																								</item>
 																							</metaDataMap>
 																						</px>
@@ -4576,11 +4576,11 @@ rgba(r, g, b, 1)</second>
 													</item>
 													<item>
 														<first>xpos</first>
-														<second>-267.03214644316336</second>
+														<second>-250.51039553680133</second>
 													</item>
 													<item>
 														<first>ypos</first>
-														<second>-184.95272412454264</second>
+														<second>-177.99620638813096</second>
 													</item>
 												</metaDataMap>
 											</px>
@@ -5121,11 +5121,11 @@ rgba(r, g, b, 1)</second>
 						<item_version>0</item_version>
 					</outputMap>
 					<metaDataMap>
-						<count>9</count>
+						<count>17</count>
 						<item_version>0</item_version>
 						<item>
 							<first>renderer.distexp</first>
-							<second>-960</second>
+							<second>-600</second>
 						</item>
 						<item>
 							<first>renderer.origin.x</first>
@@ -5152,12 +5152,44 @@ rgba(r, g, b, 1)</second>
 							<second>1</second>
 						</item>
 						<item>
+							<first>renderer.trackball0.angle</first>
+							<second>58.5604858</second>
+						</item>
+						<item>
+							<first>renderer.trackball0.axis.x</first>
+							<second>-0.845575333</second>
+						</item>
+						<item>
+							<first>renderer.trackball0.axis.y</first>
+							<second>0.413375914</second>
+						</item>
+						<item>
+							<first>renderer.trackball0.axis.z</first>
+							<second>0.337820441</second>
+						</item>
+						<item>
+							<first>renderer.trackball1.angle</first>
+							<second>0</second>
+						</item>
+						<item>
+							<first>renderer.trackball1.axis.x</first>
+							<second>0</second>
+						</item>
+						<item>
+							<first>renderer.trackball1.axis.y</first>
+							<second>0</second>
+						</item>
+						<item>
+							<first>renderer.trackball1.axis.z</first>
+							<second>0</second>
+						</item>
+						<item>
 							<first>xpos</first>
-							<second>172.5141821725459</second>
+							<second>328.91418054223084</second>
 						</item>
 						<item>
 							<first>ypos</first>
-							<second>-180.90737866891359</second>
+							<second>-174.00737892419099</second>
 						</item>
 					</metaDataMap>
 				</px>
@@ -5176,6 +5208,117 @@ rgba(r, g, b, 1)</second>
 			</item>
 			<item>
 				<px class_id_reference="4" object_id_reference="_59"></px>
+			</item>
+			<item>
+				<px class_id_reference="4" object_id="_72">
+					<name>Color</name>
+					<description></description>
+					<metaInfo>
+						<px class_id_reference="6" object_id="_73">
+							<name>Output</name>
+							<description></description>
+							<variant>
+								<index>1</index>
+								<value class_id="73" tracking_level="0" version="0">
+									<outputId>output0</outputId>
+								</value>
+							</variant>
+							<tags>
+								<count>0</count>
+								<item_version>0</item_version>
+							</tags>
+							<categories>
+								<count>0</count>
+								<item_version>0</item_version>
+							</categories>
+							<inputMap>
+								<count>1</count>
+								<item_version>0</item_version>
+								<item>
+									<first></first>
+									<second>
+										<px class_id_reference="13" object_id="_74">
+											<index>0</index>
+											<name>Input</name>
+											<description></description>
+											<type>
+												<root>
+													<index>0</index>
+													<value>4</value>
+												</root>
+											</type>
+											<defaultValue>
+												<valid>0</valid>
+											</defaultValue>
+											<minValue>
+												<valid>0</valid>
+											</minValue>
+											<maxValue>
+												<valid>0</valid>
+											</maxValue>
+											<valueStep>
+												<valid>0</valid>
+											</valueStep>
+											<options>
+												<valid>0</valid>
+											</options>
+											<precondition>
+												<valid>0</valid>
+											</precondition>
+										</px>
+									</second>
+								</item>
+							</inputMap>
+							<outputMap>
+								<count>0</count>
+								<item_version>0</item_version>
+							</outputMap>
+						</px>
+					</metaInfo>
+					<inputMap>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>
+							<first></first>
+							<second>
+								<type>
+									<root>
+										<index>0</index>
+										<value>4</value>
+									</root>
+								</type>
+								<root>
+									<index>2</index>
+									<value>
+										<outputId></outputId>
+										<node>
+											<px class_id_reference="4" object_id_reference="_20"></px>
+										</node>
+									</value>
+								</root>
+								<metaInfo>
+									<px class_id_reference="13" object_id_reference="_74"></px>
+								</metaInfo>
+							</second>
+						</item>
+					</inputMap>
+					<outputMap>
+						<count>0</count>
+						<item_version>0</item_version>
+					</outputMap>
+					<metaDataMap>
+						<count>2</count>
+						<item_version>0</item_version>
+						<item>
+							<first>xpos</first>
+							<second>211.6000045955181</second>
+						</item>
+						<item>
+							<first>ypos</first>
+							<second>-60.949996263831508</second>
+						</item>
+					</metaDataMap>
+				</px>
 			</item>
 		</nodes>
 	</px>
