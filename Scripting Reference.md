@@ -75,6 +75,7 @@ The following projections are supported on basic types:
 | $Vector3D$ | $length$        | $Float$ | Vector length
 | $IndexVector$ | $x, y, z$    | $Int$   | Instance spatial index
 | $IndexVector$ | $global$     | $Int$   | Global instance index
+| $IndexVector$ | $hash$       | $Float$ | Real-valued hash of the index vector, range [0..1)
 | $ColorGradient$ | $points$   | $[{pos:Float, color:Color, type:Int}]$ | List of control points of the gradient
 | $Path2D$   | $points$        | $[Vector2D]$ | List of the polygon points
 
@@ -117,7 +118,12 @@ Here $T, T_1, ..., T_n$ can be any type.
 | $chn$      | $Int$      | SDF, Material | Channel identification
 | $idx, idx0, idx1, idx2$  | $IndexVector$  | SDF, Material | Instance identification
 
-These variables can be only evaluated at runtime.
+These variables can be only evaluated at runtime. 
+
+Note that $x$ is a shorthand for $P.x$, likewise $u$ is a shorthand 
+for $uvw.x$ and $idx$ is same as $idx0$. $idx0$, $idx1$, $idx2$ form
+a 3-deep stack for repeat nodes. Subsequent repeat nodes push new indices
+to the stack and the old $idx0$ becomes $idx1$, and the old $idx1$ becomes $idx2$.
 
 
 ### Built-in functions
