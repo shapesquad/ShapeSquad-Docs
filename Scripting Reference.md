@@ -76,6 +76,7 @@ The following projections are supported on basic types:
 | $IndexVector$ | $x, y, z$    | $Int$   | Instance spatial index
 | $IndexVector$ | $global$     | $Int$   | Global instance index
 | $IndexVector$ | $hash$       | $Float$ | Real-valued hash of the index vector, range [0..1)
+| $IndexVector$ | $seedhash$   | $(Int):Float$ | Real-valued hash of the index vector for given seed, range [0..1)
 | $ColorGradient$ | $points$   | $[{pos:Float, color:Color, type:Int}]$ | List of control points of the gradient
 | $Path2D$   | $points$        | $[Vector2D]$ | List of the polygon points
 
@@ -158,8 +159,8 @@ to the stack and the old $idx0$ becomes $idx1$, and the old $idx1$ becomes $idx2
 | $linearstep$ | $(Float, Float, Float):Float$ | Linear step function
 | $smoothstep$ | $(Float, Float, Float):Float$ | Smooth step function
 | $hash$       | $(Int):Float$ | Hash function, returns value in range $[0..1)$
-| $hashidx$    | $(IndexVector):Float$ | Hash function for index vectors, returns value in range $[0..1)$
-| $hashidx2$   | $(IndexVector, Int):Float$ | Hash function for index vectors with seed, returns value in range $[0..1)$
+| $hashidx$ **Deprecated** | $(IndexVector):Float$ | Hash function for index vectors, returns value in range $[0..1)$
+| $hashidx2$ **Deprecated** | $(IndexVector, Int):Float$ | Hash function for index vectors with seed, returns value in range $[0..1)$
 | $noise$      | $(Float):Float$ | Noise function, returns value in range $[0..1)$
 | $empty$      | $([a]):Bool$    | Checks if the list is empty
 | $length$     | $([a]):Int$     | Number of elements in the list
