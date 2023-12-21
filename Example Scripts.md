@@ -215,7 +215,7 @@ let update_point = \(j:Int):Vector2D ->
     let i = int(mod(j, length(a.points) - 1)),
         p = at(a.points, j)
     in  vec2(p.x + hash((idx.y*33+idx.x)*length(a.points)+i+915)*c,
-                   p.y + hash((idx.y+idx.y*17)*length(a.points)+i+176)*c) 
+                   p.y + hash((idx.y+idx.y*17)*length(a.points)+i+176)*c-c/2) 
 in polygon(map(update_point, range(0, length(a.points))))
 ```
 
