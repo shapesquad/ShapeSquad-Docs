@@ -151,3 +151,71 @@ atan(y,x) >-1?0:1
 ```
 cos(atan(y,x)*10.)*.2
 ```
+
+### Circles packing
+```
+// Calculate both position and size (given index and repeat counter)
+\(size:(Int):Float, n:Int, m:Int):{ pos:Float, size:Float} ->
+let
+    i = int(floor(n / m)),
+    j = int(mod(n, m)),
+    total = (
+      letrec sum = \(n:Int):Float -> if n <= 0 then 0.0 else sum(n - 1) + size(n - 1) in 
+      sum(m) * 2
+     ),
+    origins = (     
+      letrec sum = \(n:Int):Float -> if n <= 0 then 0.0 else  sum(n - 1) + size(n - 1) + size(n) in
+      map(sum, range(0, m))
+    )
+in { pos = total * i + at(origins, j), size = size(j) }
+```
+
+### Line Tree
+```
+\(max_level:Int, width:Float, randomness:Float):{path:Path2D, level:Int} ->
+
+// Generate point for given tree level and index
+letrec point = \(level:Int, n:Int, y:Float):Vector2D ->
+  if level > max_level
+  then vec2(0, y)
+  else let
+    branches_per_level = int(pow(2, level)),
+    scale_x = pow(width, level),
+    origin_x = mod(n, branches_per_level) - (branches_per_level - 1) * 0.5,
+    noise_x = hash(31312 + n + branches_per_level) * randomness,
+    noise_y = hash(53534 + n + branches_per_level) * randomness,
+    pos = vec2((origin_x + noise_x) * scale_x, y + 1.0 + noise_y * 0.25)
+  in
+    (n < branches_per_level ? pos : point(level + 1, n - branches_per_level, pos.y)),
+
+// Calculate tree level, given index
+idx_to_level = \(level:Int, n:Int):Int ->
+  if level > max_level
+  then level
+  else let
+    branches_per_level = int(pow(2, level))
+  in
+    (n < branches_per_level ? level : idx_to_level(level + 1, n - branches_per_level))
+
+// Calculate first point based on index and second point as its parent.
+// Also calculate level.
+in let
+  p0 = point(0, idx.global, 0),
+  p1 = (idx.global == 0 ? vec2(0.0, -0.5) : point(0, (idx.global - 1) / 2 , 0)),
+  level = idx_to_level(0, idx.global)
+in
+  { path=linestring([p0, p1]), level=level }
+
+```
+
+### Polygon Variations
+```
+\(a:Path2D,c:Float):Path2D ->
+let update_point = \(j:Int):Vector2D ->
+    let i = int(mod(j, length(a.points) - 1)),
+        p = at(a.points, j)
+    in  vec2(p.x + hash((idx.y*33+idx.x)*length(a.points)+i+915)*c,
+                   p.y + hash((idx.y+idx.y*17)*length(a.points)+i+176)*c) 
+in polygon(map(update_point, range(0, length(a.points))))
+```
+
