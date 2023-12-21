@@ -2,7 +2,7 @@
 
 ## Contents
 
-* [Scripting reference](Scripting Reference.md)
-* [Example scripts](Example Scripts.md)
+* [Scripting reference](Scripting%20Reference.md)
+* [Example scripts](Example%20Scripts.md)
 * [Naming, etc conventions](Conventions.md)
 
