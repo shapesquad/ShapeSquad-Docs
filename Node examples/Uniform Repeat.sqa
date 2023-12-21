@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!DOCTYPE boost_serialization>
-<boost_serialization signature="serialization::archive" version="19">
+<boost_serialization signature="serialization::archive" version="20">
 <nodeGraph class_id="0" tracking_level="0" version="1">
 	<px class_id="1" tracking_level="1" version="1" object_id="_0">
 		<name>Uniform Repeat</name>
 		<description></description>
 		<uuid>56365a31-dd86-48da-b2f9-199adec8fbd9</uuid>
-		<sourceURI>C:/Users/Marten/Desktop/Shapesquad/ShapeSquad-Docs/Node examples/Uniform Repeat.sqa</sourceURI>
+		<sourceURI>C:/Users/R/Documents/3d/shapesquad/ShapeSquad-Docs/Node examples/Uniform Repeat.sqa</sourceURI>
 		<nodes class_id="2" tracking_level="0" version="0">
 			<count>5</count>
 			<item_version>1</item_version>
@@ -585,7 +585,7 @@
 												<valid>1</valid>
 												<value>
 													<index>1</index>
-													<value>0</value>
+													<value>1</value>
 												</value>
 											</defaultValue>
 											<minValue>
@@ -623,7 +623,7 @@
 												<valid>1</valid>
 												<value>
 													<index>3</index>
-													<value>1.500000000e+00</value>
+													<value>1.000000000e+00</value>
 												</value>
 											</defaultValue>
 											<minValue>
@@ -669,7 +669,7 @@
 												<valid>1</valid>
 												<value>
 													<index>3</index>
-													<value>1.500000000e+00</value>
+													<value>1.000000000e+00</value>
 												</value>
 											</defaultValue>
 											<minValue>
@@ -2453,7 +2453,7 @@
 						<item_version>0</item_version>
 					</outputMap>
 					<metaDataMap>
-						<count>9</count>
+						<count>10</count>
 						<item_version>0</item_version>
 						<item>
 							<first>renderer.distexp</first>
@@ -2461,11 +2461,15 @@
 						</item>
 						<item>
 							<first>renderer.origin.x</first>
-							<second>-0.014534883720930232</second>
+							<second>-0.031250714596053136</second>
 						</item>
 						<item>
 							<first>renderer.origin.y</first>
-							<second>0.013015184381778741</second>
+							<second>0.01052141879574383</second>
+						</item>
+						<item>
+							<first>renderer.preset</first>
+							<second>Default</second>
 						</item>
 						<item>
 							<first>renderer.rendermode</first>

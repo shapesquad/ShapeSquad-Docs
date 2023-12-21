@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!DOCTYPE boost_serialization>
-<boost_serialization signature="serialization::archive" version="19">
+<boost_serialization signature="serialization::archive" version="20">
 <nodeGraph class_id="0" tracking_level="0" version="1">
 	<px class_id="1" tracking_level="1" version="1" object_id="_0">
 		<name>Height to Normal</name>
 		<description></description>
 		<uuid>bd84405e-61ea-4a1a-88ea-ab2c57f3b895</uuid>
-		<sourceURI>C:/Users/Marten/Desktop/Shapesquad/ShapeSquad-Docs/Node examples/Height to Normal.sqa</sourceURI>
+		<sourceURI>C:/Users/R/Documents/3d/shapesquad/ShapeSquad-Docs/Node examples/Height to Normal.sqa</sourceURI>
 		<nodes class_id="2" tracking_level="0" version="0">
 			<count>10</count>
 			<item_version>1</item_version>
@@ -274,10 +274,10 @@
 														<categories>
 															<count>1</count>
 															<item_version>0</item_version>
-															<item>Math</item>
+															<item>Float/Noises</item>
 														</categories>
 														<inputMap>
-															<count>11</count>
+															<count>13</count>
 															<item_version>0</item_version>
 															<item>
 																<first>bias</first>
@@ -322,57 +322,11 @@
 																</second>
 															</item>
 															<item>
-																<first>octaves</first>
+																<first>increment</first>
 																<second>
 																	<px class_id_reference="13" object_id="_11">
-																		<index>10</index>
-																		<name>Octaves</name>
-																		<description></description>
-																		<type>
-																			<root>
-																				<index>0</index>
-																				<value>2</value>
-																			</root>
-																		</type>
-																		<defaultValue>
-																			<valid>1</valid>
-																			<value>
-																				<index>2</index>
-																				<value>4</value>
-																			</value>
-																		</defaultValue>
-																		<minValue>
-																			<valid>1</valid>
-																			<value>
-																				<index>2</index>
-																				<value>1</value>
-																			</value>
-																		</minValue>
-																		<maxValue>
-																			<valid>0</valid>
-																		</maxValue>
-																		<valueStep>
-																			<valid>1</valid>
-																			<value>
-																				<index>2</index>
-																				<value>1</value>
-																			</value>
-																		</valueStep>
-																		<options>
-																			<valid>0</valid>
-																		</options>
-																		<precondition>
-																			<valid>0</valid>
-																		</precondition>
-																	</px>
-																</second>
-															</item>
-															<item>
-																<first>randomness</first>
-																<second>
-																	<px class_id_reference="13" object_id="_12">
-																		<index>9</index>
-																		<name>Randomness</name>
+																		<index>12</index>
+																		<name>Increment</name>
 																		<description></description>
 																		<type>
 																			<root>
@@ -395,17 +349,13 @@
 																			</value>
 																		</minValue>
 																		<maxValue>
-																			<valid>1</valid>
-																			<value>
-																				<index>3</index>
-																				<value>1.000000000e+00</value>
-																			</value>
+																			<valid>0</valid>
 																		</maxValue>
 																		<valueStep>
 																			<valid>1</valid>
 																			<value>
 																				<index>3</index>
-																				<value>1.000000015e-01</value>
+																				<value>5.000000075e-02</value>
 																			</value>
 																		</valueStep>
 																		<options>
@@ -453,6 +403,248 @@
 																											<index>0</index>
 																											<value>
 																												<index>2</index>
+																												<value>3</value>
+																											</value>
+																										</variant>
+																									</value>
+																								</variant>
+																							</expr2>
+																						</object>
+																					</value>
+																				</variant>
+																			</value>
+																		</precondition>
+																	</px>
+																</second>
+															</item>
+															<item>
+																<first>lacunarity</first>
+																<second>
+																	<px class_id_reference="13" object_id="_12">
+																		<index>11</index>
+																		<name>Lacunarity</name>
+																		<description></description>
+																		<type>
+																			<root>
+																				<index>0</index>
+																				<value>3</value>
+																			</root>
+																		</type>
+																		<defaultValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>2.000000000e+00</value>
+																			</value>
+																		</defaultValue>
+																		<minValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>0.000000000e+00</value>
+																			</value>
+																		</minValue>
+																		<maxValue>
+																			<valid>0</valid>
+																		</maxValue>
+																		<valueStep>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>9.999999776e-03</value>
+																			</value>
+																		</valueStep>
+																		<options>
+																			<valid>0</valid>
+																		</options>
+																		<precondition>
+																			<valid>1</valid>
+																			<value>
+																				<type>
+																					<root>
+																						<index>0</index>
+																						<value>1</value>
+																					</root>
+																				</type>
+																				<variant>
+																					<index>8</index>
+																					<value>
+																						<object>
+																							<index>4</index>
+																							<expr1>
+																								<type>
+																									<root>
+																										<index>0</index>
+																										<value>2</value>
+																									</root>
+																								</type>
+																								<variant>
+																									<index>1</index>
+																									<value>
+																										<name>type</name>
+																									</value>
+																								</variant>
+																							</expr1>
+																							<expr2>
+																								<type>
+																									<root>
+																										<index>0</index>
+																										<value>2</value>
+																									</root>
+																								</type>
+																								<variant>
+																									<index>0</index>
+																									<value>
+																										<variant>
+																											<index>0</index>
+																											<value>
+																												<index>2</index>
+																												<value>3</value>
+																											</value>
+																										</variant>
+																									</value>
+																								</variant>
+																							</expr2>
+																						</object>
+																					</value>
+																				</variant>
+																			</value>
+																		</precondition>
+																	</px>
+																</second>
+															</item>
+															<item>
+																<first>octaves</first>
+																<second>
+																	<px class_id_reference="13" object_id="_13">
+																		<index>10</index>
+																		<name>Octaves</name>
+																		<description></description>
+																		<type>
+																			<root>
+																				<index>0</index>
+																				<value>2</value>
+																			</root>
+																		</type>
+																		<defaultValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>2</index>
+																				<value>4</value>
+																			</value>
+																		</defaultValue>
+																		<minValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>2</index>
+																				<value>1</value>
+																			</value>
+																		</minValue>
+																		<maxValue>
+																			<valid>0</valid>
+																		</maxValue>
+																		<valueStep>
+																			<valid>1</valid>
+																			<value>
+																				<index>2</index>
+																				<value>1</value>
+																			</value>
+																		</valueStep>
+																		<options>
+																			<valid>0</valid>
+																		</options>
+																		<precondition>
+																			<valid>0</valid>
+																		</precondition>
+																	</px>
+																</second>
+															</item>
+															<item>
+																<first>randomness</first>
+																<second>
+																	<px class_id_reference="13" object_id="_14">
+																		<index>9</index>
+																		<name>Randomness</name>
+																		<description></description>
+																		<type>
+																			<root>
+																				<index>0</index>
+																				<value>3</value>
+																			</root>
+																		</type>
+																		<defaultValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>1.000000000e+00</value>
+																			</value>
+																		</defaultValue>
+																		<minValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>0.000000000e+00</value>
+																			</value>
+																		</minValue>
+																		<maxValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>1.000000000e+00</value>
+																			</value>
+																		</maxValue>
+																		<valueStep>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>1.000000015e-01</value>
+																			</value>
+																		</valueStep>
+																		<options>
+																			<valid>0</valid>
+																		</options>
+																		<precondition>
+																			<valid>1</valid>
+																			<value>
+																				<type>
+																					<root>
+																						<index>0</index>
+																						<value>1</value>
+																					</root>
+																				</type>
+																				<variant>
+																					<index>8</index>
+																					<value>
+																						<object>
+																							<index>4</index>
+																							<expr1>
+																								<type>
+																									<root>
+																										<index>0</index>
+																										<value>2</value>
+																									</root>
+																								</type>
+																								<variant>
+																									<index>1</index>
+																									<value>
+																										<name>type</name>
+																									</value>
+																								</variant>
+																							</expr1>
+																							<expr2>
+																								<type>
+																									<root>
+																										<index>0</index>
+																										<value>2</value>
+																									</root>
+																								</type>
+																								<variant>
+																									<index>0</index>
+																									<value>
+																										<variant>
+																											<index>0</index>
+																											<value>
+																												<index>2</index>
 																												<value>2</value>
 																											</value>
 																										</variant>
@@ -470,7 +662,7 @@
 															<item>
 																<first>scale</first>
 																<second>
-																	<px class_id_reference="13" object_id="_13">
+																	<px class_id_reference="13" object_id="_15">
 																		<index>6</index>
 																		<name>Output scale</name>
 																		<description></description>
@@ -512,7 +704,7 @@
 															<item>
 																<first>smoothness</first>
 																<second>
-																	<px class_id_reference="13" object_id="_14">
+																	<px class_id_reference="13" object_id="_16">
 																		<index>8</index>
 																		<name>Smoothness</name>
 																		<description></description>
@@ -612,7 +804,7 @@
 															<item>
 																<first>subtype</first>
 																<second>
-																	<px class_id_reference="13" object_id="_15">
+																	<px class_id_reference="13" object_id="_17">
 																		<index>1</index>
 																		<name>Subtype</name>
 																		<description></description>
@@ -725,7 +917,7 @@
 															<item>
 																<first>sx</first>
 																<second>
-																	<px class_id_reference="13" object_id="_16">
+																	<px class_id_reference="13" object_id="_18">
 																		<index>4</index>
 																		<name>Input scale X</name>
 																		<description></description>
@@ -767,7 +959,7 @@
 															<item>
 																<first>sy</first>
 																<second>
-																	<px class_id_reference="13" object_id="_17">
+																	<px class_id_reference="13" object_id="_19">
 																		<index>5</index>
 																		<name>Input scale Y</name>
 																		<description></description>
@@ -809,7 +1001,7 @@
 															<item>
 																<first>type</first>
 																<second>
-																	<px class_id_reference="13" object_id="_18">
+																	<px class_id_reference="13" object_id="_20">
 																		<index>0</index>
 																		<name>Type</name>
 																		<description></description>
@@ -838,7 +1030,7 @@
 																		<options>
 																			<valid>1</valid>
 																			<value>
-																				<count>3</count>
+																				<count>4</count>
 																				<item_version>0</item_version>
 																				<item>
 																					<first>Value</first>
@@ -861,6 +1053,13 @@
 																						<value>2</value>
 																					</second>
 																				</item>
+																				<item>
+																					<first>Musgrave</first>
+																					<second>
+																						<index>2</index>
+																						<value>3</value>
+																					</second>
+																				</item>
 																			</value>
 																		</options>
 																		<precondition>
@@ -872,7 +1071,7 @@
 															<item>
 																<first>x</first>
 																<second>
-																	<px class_id_reference="13" object_id="_19">
+																	<px class_id_reference="13" object_id="_21">
 																		<index>2</index>
 																		<name>Input X</name>
 																		<description></description>
@@ -910,7 +1109,7 @@
 															<item>
 																<first>y</first>
 																<second>
-																	<px class_id_reference="13" object_id="_20">
+																	<px class_id_reference="13" object_id="_22">
 																		<index>3</index>
 																		<name>Input Y</name>
 																		<description></description>
@@ -952,7 +1151,7 @@
 															<item>
 																<first></first>
 																<second>
-																	<px class_id_reference="23" object_id="_21">
+																	<px class_id_reference="23" object_id="_23">
 																		<index>0</index>
 																		<name></name>
 																		<description></description>
@@ -969,7 +1168,7 @@
 													</px>
 												</metaInfo>
 												<inputMap>
-													<count>11</count>
+													<count>13</count>
 													<item_version>0</item_version>
 													<item>
 														<first>bias</first>
@@ -993,6 +1192,48 @@
 														</second>
 													</item>
 													<item>
+														<first>increment</first>
+														<second>
+															<type>
+																<root>
+																	<index>0</index>
+																	<value>3</value>
+																</root>
+															</type>
+															<root>
+																<index>0</index>
+																<value>
+																	<index>3</index>
+																	<value>1.000000000e+00</value>
+																</value>
+															</root>
+															<metaInfo>
+																<px class_id_reference="13" object_id_reference="_11"></px>
+															</metaInfo>
+														</second>
+													</item>
+													<item>
+														<first>lacunarity</first>
+														<second>
+															<type>
+																<root>
+																	<index>0</index>
+																	<value>3</value>
+																</root>
+															</type>
+															<root>
+																<index>0</index>
+																<value>
+																	<index>3</index>
+																	<value>2.000000000e+00</value>
+																</value>
+															</root>
+															<metaInfo>
+																<px class_id_reference="13" object_id_reference="_12"></px>
+															</metaInfo>
+														</second>
+													</item>
+													<item>
 														<first>octaves</first>
 														<second>
 															<type>
@@ -1009,7 +1250,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_11"></px>
+																<px class_id_reference="13" object_id_reference="_13"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -1030,7 +1271,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_12"></px>
+																<px class_id_reference="13" object_id_reference="_14"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -1051,7 +1292,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_13"></px>
+																<px class_id_reference="13" object_id_reference="_15"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -1072,7 +1313,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_14"></px>
+																<px class_id_reference="13" object_id_reference="_16"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -1093,7 +1334,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_15"></px>
+																<px class_id_reference="13" object_id_reference="_17"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -1114,7 +1355,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_16"></px>
+																<px class_id_reference="13" object_id_reference="_18"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -1135,7 +1376,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_17"></px>
+																<px class_id_reference="13" object_id_reference="_19"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -1156,7 +1397,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_18"></px>
+																<px class_id_reference="13" object_id_reference="_20"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -1189,7 +1430,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_19"></px>
+																<px class_id_reference="13" object_id_reference="_21"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -1222,7 +1463,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_20"></px>
+																<px class_id_reference="13" object_id_reference="_22"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -1240,7 +1481,7 @@
 																</root>
 															</type>
 															<metaInfo>
-																<px class_id_reference="23" object_id_reference="_21"></px>
+																<px class_id_reference="23" object_id_reference="_23"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -1378,11 +1619,11 @@
 				</px>
 			</item>
 			<item>
-				<px class_id_reference="4" object_id="_22">
+				<px class_id_reference="4" object_id="_24">
 					<name>PBR</name>
 					<description></description>
 					<metaInfo>
-						<px class_id_reference="6" object_id="_23">
+						<px class_id_reference="6" object_id="_25">
 							<name>PBR</name>
 							<description></description>
 							<variant>
@@ -1406,7 +1647,7 @@
 								<item>
 									<first>base</first>
 									<second>
-										<px class_id_reference="13" object_id="_24">
+										<px class_id_reference="13" object_id="_26">
 											<index>0</index>
 											<name>Base Color</name>
 											<description></description>
@@ -1452,7 +1693,7 @@
 								<item>
 									<first>emission</first>
 									<second>
-										<px class_id_reference="13" object_id="_25">
+										<px class_id_reference="13" object_id="_27">
 											<index>1</index>
 											<name>Emission Color</name>
 											<description></description>
@@ -1498,9 +1739,9 @@
 								<item>
 									<first>metalness</first>
 									<second>
-										<px class_id_reference="13" object_id="_26">
+										<px class_id_reference="13" object_id="_28">
 											<index>2</index>
-											<name>Metalness</name>
+											<name>Metallic</name>
 											<description></description>
 											<type>
 												<root>
@@ -1548,7 +1789,7 @@
 								<item>
 									<first>normal</first>
 									<second>
-										<px class_id_reference="13" object_id="_27">
+										<px class_id_reference="13" object_id="_29">
 											<index>4</index>
 											<name>Normal</name>
 											<description></description>
@@ -1595,7 +1836,7 @@
 								<item>
 									<first>roughness</first>
 									<second>
-										<px class_id_reference="13" object_id="_28">
+										<px class_id_reference="13" object_id="_30">
 											<index>3</index>
 											<name>Roughness</name>
 											<description></description>
@@ -1649,7 +1890,7 @@
 								<item>
 									<first></first>
 									<second>
-										<px class_id_reference="23" object_id="_29">
+										<px class_id_reference="23" object_id="_31">
 											<index>0</index>
 											<name></name>
 											<description></description>
@@ -1693,7 +1934,7 @@
 									</value>
 								</root>
 								<metaInfo>
-									<px class_id_reference="13" object_id_reference="_24"></px>
+									<px class_id_reference="13" object_id_reference="_26"></px>
 								</metaInfo>
 							</second>
 						</item>
@@ -1722,7 +1963,7 @@
 									</value>
 								</root>
 								<metaInfo>
-									<px class_id_reference="13" object_id_reference="_25"></px>
+									<px class_id_reference="13" object_id_reference="_27"></px>
 								</metaInfo>
 							</second>
 						</item>
@@ -1743,7 +1984,7 @@
 									</value>
 								</root>
 								<metaInfo>
-									<px class_id_reference="13" object_id_reference="_26"></px>
+									<px class_id_reference="13" object_id_reference="_28"></px>
 								</metaInfo>
 							</second>
 						</item>
@@ -1766,7 +2007,7 @@
 									</value>
 								</root>
 								<metaInfo>
-									<px class_id_reference="13" object_id_reference="_27"></px>
+									<px class_id_reference="13" object_id_reference="_29"></px>
 								</metaInfo>
 							</second>
 						</item>
@@ -1787,7 +2028,7 @@
 									</value>
 								</root>
 								<metaInfo>
-									<px class_id_reference="13" object_id_reference="_28"></px>
+									<px class_id_reference="13" object_id_reference="_30"></px>
 								</metaInfo>
 							</second>
 						</item>
@@ -1805,7 +2046,7 @@
 									</root>
 								</type>
 								<metaInfo>
-									<px class_id_reference="23" object_id_reference="_29"></px>
+									<px class_id_reference="23" object_id_reference="_31"></px>
 								</metaInfo>
 							</second>
 						</item>
@@ -1853,11 +2094,11 @@
 				</px>
 			</item>
 			<item>
-				<px class_id_reference="4" object_id="_30">
+				<px class_id_reference="4" object_id="_32">
 					<name>Viewport</name>
 					<description></description>
 					<metaInfo>
-						<px class_id_reference="6" object_id="_31">
+						<px class_id_reference="6" object_id="_33">
 							<name>Viewport</name>
 							<description></description>
 							<variant>
@@ -1880,7 +2121,7 @@
 								<item>
 									<first></first>
 									<second>
-										<px class_id_reference="13" object_id="_32">
+										<px class_id_reference="13" object_id="_34">
 											<index>0</index>
 											<name>Input</name>
 											<description></description>
@@ -1935,11 +2176,11 @@
 									<value>
 										<outputId></outputId>
 										<node>
-											<px class_id_reference="4" object_id="_33">
+											<px class_id_reference="4" object_id="_35">
 												<name>Apply Material</name>
 												<description></description>
 												<metaInfo>
-													<px class_id_reference="6" object_id="_34">
+													<px class_id_reference="6" object_id="_36">
 														<name>Apply Material</name>
 														<description></description>
 														<variant>
@@ -1963,7 +2204,7 @@
 															<item>
 																<first>material</first>
 																<second>
-																	<px class_id_reference="13" object_id="_35">
+																	<px class_id_reference="13" object_id="_37">
 																		<index>1</index>
 																		<name>Material</name>
 																		<description></description>
@@ -2001,7 +2242,7 @@
 															<item>
 																<first>sdf</first>
 																<second>
-																	<px class_id_reference="13" object_id="_36">
+																	<px class_id_reference="13" object_id="_38">
 																		<index>0</index>
 																		<name>SDF</name>
 																		<description></description>
@@ -2043,7 +2284,7 @@
 															<item>
 																<first></first>
 																<second>
-																	<px class_id_reference="23" object_id="_37">
+																	<px class_id_reference="23" object_id="_39">
 																		<index>0</index>
 																		<name></name>
 																		<description></description>
@@ -2076,12 +2317,12 @@
 																<value>
 																	<outputId></outputId>
 																	<node>
-																		<px class_id_reference="4" object_id_reference="_22"></px>
+																		<px class_id_reference="4" object_id_reference="_24"></px>
 																	</node>
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_35"></px>
+																<px class_id_reference="13" object_id_reference="_37"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -2099,11 +2340,11 @@
 																<value>
 																	<outputId></outputId>
 																	<node>
-																		<px class_id_reference="4" object_id="_38">
+																		<px class_id_reference="4" object_id="_40">
 																			<name>Rectangle</name>
 																			<description></description>
 																			<metaInfo>
-																				<px class_id_reference="6" object_id="_39">
+																				<px class_id_reference="6" object_id="_41">
 																					<name>Rectangle</name>
 																					<description></description>
 																					<variant>
@@ -2127,7 +2368,7 @@
 																						<item>
 																							<first>radius</first>
 																							<second>
-																								<px class_id_reference="13" object_id="_40">
+																								<px class_id_reference="13" object_id="_42">
 																									<index>4</index>
 																									<name>Radius</name>
 																									<description></description>
@@ -2173,7 +2414,7 @@
 																						<item>
 																							<first>sx</first>
 																							<second>
-																								<px class_id_reference="13" object_id="_41">
+																								<px class_id_reference="13" object_id="_43">
 																									<index>2</index>
 																									<name>Size X</name>
 																									<description></description>
@@ -2219,7 +2460,7 @@
 																						<item>
 																							<first>sy</first>
 																							<second>
-																								<px class_id_reference="13" object_id="_42">
+																								<px class_id_reference="13" object_id="_44">
 																									<index>3</index>
 																									<name>Size Y</name>
 																									<description></description>
@@ -2265,7 +2506,7 @@
 																						<item>
 																							<first>x</first>
 																							<second>
-																								<px class_id_reference="13" object_id="_43">
+																								<px class_id_reference="13" object_id="_45">
 																									<index>0</index>
 																									<name>Origin X</name>
 																									<description></description>
@@ -2307,7 +2548,7 @@
 																						<item>
 																							<first>y</first>
 																							<second>
-																								<px class_id_reference="13" object_id="_44">
+																								<px class_id_reference="13" object_id="_46">
 																									<index>1</index>
 																									<name>Origin Y</name>
 																									<description></description>
@@ -2353,7 +2594,7 @@
 																						<item>
 																							<first></first>
 																							<second>
-																								<px class_id_reference="23" object_id="_45">
+																								<px class_id_reference="23" object_id="_47">
 																									<index>0</index>
 																									<name></name>
 																									<description></description>
@@ -2389,7 +2630,7 @@
 																							</value>
 																						</root>
 																						<metaInfo>
-																							<px class_id_reference="13" object_id_reference="_40"></px>
+																							<px class_id_reference="13" object_id_reference="_42"></px>
 																						</metaInfo>
 																					</second>
 																				</item>
@@ -2410,7 +2651,7 @@
 																							</value>
 																						</root>
 																						<metaInfo>
-																							<px class_id_reference="13" object_id_reference="_41"></px>
+																							<px class_id_reference="13" object_id_reference="_43"></px>
 																						</metaInfo>
 																					</second>
 																				</item>
@@ -2431,7 +2672,7 @@
 																							</value>
 																						</root>
 																						<metaInfo>
-																							<px class_id_reference="13" object_id_reference="_42"></px>
+																							<px class_id_reference="13" object_id_reference="_44"></px>
 																						</metaInfo>
 																					</second>
 																				</item>
@@ -2452,7 +2693,7 @@
 																							</value>
 																						</root>
 																						<metaInfo>
-																							<px class_id_reference="13" object_id_reference="_43"></px>
+																							<px class_id_reference="13" object_id_reference="_45"></px>
 																						</metaInfo>
 																					</second>
 																				</item>
@@ -2473,7 +2714,7 @@
 																							</value>
 																						</root>
 																						<metaInfo>
-																							<px class_id_reference="13" object_id_reference="_44"></px>
+																							<px class_id_reference="13" object_id_reference="_46"></px>
 																						</metaInfo>
 																					</second>
 																				</item>
@@ -2491,7 +2732,7 @@
 																							</root>
 																						</type>
 																						<metaInfo>
-																							<px class_id_reference="23" object_id_reference="_45"></px>
+																							<px class_id_reference="23" object_id_reference="_47"></px>
 																						</metaInfo>
 																					</second>
 																				</item>
@@ -2541,7 +2782,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_36"></px>
+																<px class_id_reference="13" object_id_reference="_38"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -2559,7 +2800,7 @@
 																</root>
 															</type>
 															<metaInfo>
-																<px class_id_reference="23" object_id_reference="_37"></px>
+																<px class_id_reference="23" object_id_reference="_39"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -2609,7 +2850,7 @@
 									</value>
 								</root>
 								<metaInfo>
-									<px class_id_reference="13" object_id_reference="_32"></px>
+									<px class_id_reference="13" object_id_reference="_34"></px>
 								</metaInfo>
 							</second>
 						</item>
@@ -2619,7 +2860,7 @@
 						<item_version>0</item_version>
 					</outputMap>
 					<metaDataMap>
-						<count>17</count>
+						<count>18</count>
 						<item_version>0</item_version>
 						<item>
 							<first>renderer.distexp</first>
@@ -2632,6 +2873,10 @@
 						<item>
 							<first>renderer.origin.y</first>
 							<second>0.002169197396963043</second>
+						</item>
+						<item>
+							<first>renderer.preset</first>
+							<second>Default</second>
 						</item>
 						<item>
 							<first>renderer.rendermode</first>
@@ -2693,20 +2938,20 @@
 				</px>
 			</item>
 			<item>
-				<px class_id_reference="4" object_id_reference="_33"></px>
+				<px class_id_reference="4" object_id_reference="_35"></px>
 			</item>
 			<item>
-				<px class_id_reference="4" object_id_reference="_38"></px>
+				<px class_id_reference="4" object_id_reference="_40"></px>
 			</item>
 			<item>
 				<px class_id_reference="4" object_id_reference="_8"></px>
 			</item>
 			<item>
-				<px class_id_reference="4" object_id="_46">
+				<px class_id_reference="4" object_id="_48">
 					<name>Viewport</name>
 					<description></description>
 					<metaInfo>
-						<px class_id_reference="6" object_id="_47">
+						<px class_id_reference="6" object_id="_49">
 							<name>Viewport</name>
 							<description></description>
 							<variant>
@@ -2729,7 +2974,7 @@
 								<item>
 									<first></first>
 									<second>
-										<px class_id_reference="13" object_id="_48">
+										<px class_id_reference="13" object_id="_50">
 											<index>0</index>
 											<name>Input</name>
 											<description></description>
@@ -2784,11 +3029,11 @@
 									<value>
 										<outputId></outputId>
 										<node>
-											<px class_id_reference="4" object_id="_49">
+											<px class_id_reference="4" object_id="_51">
 												<name>PBR</name>
 												<description></description>
 												<metaInfo>
-													<px class_id_reference="6" object_id_reference="_23"></px>
+													<px class_id_reference="6" object_id_reference="_25"></px>
 												</metaInfo>
 												<inputMap>
 													<count>5</count>
@@ -2818,7 +3063,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_24"></px>
+																<px class_id_reference="13" object_id_reference="_26"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -2847,7 +3092,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_25"></px>
+																<px class_id_reference="13" object_id_reference="_27"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -2868,7 +3113,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_26"></px>
+																<px class_id_reference="13" object_id_reference="_28"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -2886,7 +3131,7 @@
 																<value>
 																	<outputId></outputId>
 																	<node>
-																		<px class_id_reference="4" object_id="_50">
+																		<px class_id_reference="4" object_id="_52">
 																			<name>Height to Normal*</name>
 																			<description></description>
 																			<metaInfo>
@@ -2930,14 +3175,14 @@
 																							<value>
 																								<outputId></outputId>
 																								<node>
-																									<px class_id_reference="4" object_id="_51">
+																									<px class_id_reference="4" object_id="_53">
 																										<name>Noise 2D</name>
 																										<description></description>
 																										<metaInfo>
 																											<px class_id_reference="6" object_id_reference="_9"></px>
 																										</metaInfo>
 																										<inputMap>
-																											<count>11</count>
+																											<count>13</count>
 																											<item_version>0</item_version>
 																											<item>
 																												<first>bias</first>
@@ -2961,6 +3206,48 @@
 																												</second>
 																											</item>
 																											<item>
+																												<first>increment</first>
+																												<second>
+																													<type>
+																														<root>
+																															<index>0</index>
+																															<value>3</value>
+																														</root>
+																													</type>
+																													<root>
+																														<index>0</index>
+																														<value>
+																															<index>3</index>
+																															<value>1.000000000e+00</value>
+																														</value>
+																													</root>
+																													<metaInfo>
+																														<px class_id_reference="13" object_id_reference="_11"></px>
+																													</metaInfo>
+																												</second>
+																											</item>
+																											<item>
+																												<first>lacunarity</first>
+																												<second>
+																													<type>
+																														<root>
+																															<index>0</index>
+																															<value>3</value>
+																														</root>
+																													</type>
+																													<root>
+																														<index>0</index>
+																														<value>
+																															<index>3</index>
+																															<value>2.000000000e+00</value>
+																														</value>
+																													</root>
+																													<metaInfo>
+																														<px class_id_reference="13" object_id_reference="_12"></px>
+																													</metaInfo>
+																												</second>
+																											</item>
+																											<item>
 																												<first>octaves</first>
 																												<second>
 																													<type>
@@ -2977,7 +3264,7 @@
 																														</value>
 																													</root>
 																													<metaInfo>
-																														<px class_id_reference="13" object_id_reference="_11"></px>
+																														<px class_id_reference="13" object_id_reference="_13"></px>
 																													</metaInfo>
 																												</second>
 																											</item>
@@ -2998,7 +3285,7 @@
 																														</value>
 																													</root>
 																													<metaInfo>
-																														<px class_id_reference="13" object_id_reference="_12"></px>
+																														<px class_id_reference="13" object_id_reference="_14"></px>
 																													</metaInfo>
 																												</second>
 																											</item>
@@ -3019,7 +3306,7 @@
 																														</value>
 																													</root>
 																													<metaInfo>
-																														<px class_id_reference="13" object_id_reference="_13"></px>
+																														<px class_id_reference="13" object_id_reference="_15"></px>
 																													</metaInfo>
 																												</second>
 																											</item>
@@ -3040,7 +3327,7 @@
 																														</value>
 																													</root>
 																													<metaInfo>
-																														<px class_id_reference="13" object_id_reference="_14"></px>
+																														<px class_id_reference="13" object_id_reference="_16"></px>
 																													</metaInfo>
 																												</second>
 																											</item>
@@ -3061,7 +3348,7 @@
 																														</value>
 																													</root>
 																													<metaInfo>
-																														<px class_id_reference="13" object_id_reference="_15"></px>
+																														<px class_id_reference="13" object_id_reference="_17"></px>
 																													</metaInfo>
 																												</second>
 																											</item>
@@ -3082,7 +3369,7 @@
 																														</value>
 																													</root>
 																													<metaInfo>
-																														<px class_id_reference="13" object_id_reference="_16"></px>
+																														<px class_id_reference="13" object_id_reference="_18"></px>
 																													</metaInfo>
 																												</second>
 																											</item>
@@ -3103,7 +3390,7 @@
 																														</value>
 																													</root>
 																													<metaInfo>
-																														<px class_id_reference="13" object_id_reference="_17"></px>
+																														<px class_id_reference="13" object_id_reference="_19"></px>
 																													</metaInfo>
 																												</second>
 																											</item>
@@ -3124,7 +3411,7 @@
 																														</value>
 																													</root>
 																													<metaInfo>
-																														<px class_id_reference="13" object_id_reference="_18"></px>
+																														<px class_id_reference="13" object_id_reference="_20"></px>
 																													</metaInfo>
 																												</second>
 																											</item>
@@ -3157,7 +3444,7 @@
 																														</value>
 																													</root>
 																													<metaInfo>
-																														<px class_id_reference="13" object_id_reference="_19"></px>
+																														<px class_id_reference="13" object_id_reference="_21"></px>
 																													</metaInfo>
 																												</second>
 																											</item>
@@ -3190,7 +3477,7 @@
 																														</value>
 																													</root>
 																													<metaInfo>
-																														<px class_id_reference="13" object_id_reference="_20"></px>
+																														<px class_id_reference="13" object_id_reference="_22"></px>
 																													</metaInfo>
 																												</second>
 																											</item>
@@ -3208,7 +3495,7 @@
 																														</root>
 																													</type>
 																													<metaInfo>
-																														<px class_id_reference="23" object_id_reference="_21"></px>
+																														<px class_id_reference="23" object_id_reference="_23"></px>
 																													</metaInfo>
 																												</second>
 																											</item>
@@ -3348,7 +3635,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_27"></px>
+																<px class_id_reference="13" object_id_reference="_29"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -3369,7 +3656,7 @@
 																</value>
 															</root>
 															<metaInfo>
-																<px class_id_reference="13" object_id_reference="_28"></px>
+																<px class_id_reference="13" object_id_reference="_30"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -3387,7 +3674,7 @@
 																</root>
 															</type>
 															<metaInfo>
-																<px class_id_reference="23" object_id_reference="_29"></px>
+																<px class_id_reference="23" object_id_reference="_31"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -3437,7 +3724,7 @@
 									</value>
 								</root>
 								<metaInfo>
-									<px class_id_reference="13" object_id_reference="_48"></px>
+									<px class_id_reference="13" object_id_reference="_50"></px>
 								</metaInfo>
 							</second>
 						</item>
@@ -3447,7 +3734,7 @@
 						<item_version>0</item_version>
 					</outputMap>
 					<metaDataMap>
-						<count>17</count>
+						<count>18</count>
 						<item_version>0</item_version>
 						<item>
 							<first>renderer.distexp</first>
@@ -3460,6 +3747,10 @@
 						<item>
 							<first>renderer.origin.y</first>
 							<second>-0.036876355748373106</second>
+						</item>
+						<item>
+							<first>renderer.preset</first>
+							<second>Default</second>
 						</item>
 						<item>
 							<first>renderer.rendermode</first>
@@ -3487,7 +3778,7 @@
 						</item>
 						<item>
 							<first>renderer.trackball0.axis.y</first>
-							<second>0.218391031</second>
+							<second>0.218391046</second>
 						</item>
 						<item>
 							<first>renderer.trackball0.axis.z</first>
@@ -3521,13 +3812,13 @@
 				</px>
 			</item>
 			<item>
-				<px class_id_reference="4" object_id_reference="_49"></px>
-			</item>
-			<item>
-				<px class_id_reference="4" object_id_reference="_50"></px>
-			</item>
-			<item>
 				<px class_id_reference="4" object_id_reference="_51"></px>
+			</item>
+			<item>
+				<px class_id_reference="4" object_id_reference="_52"></px>
+			</item>
+			<item>
+				<px class_id_reference="4" object_id_reference="_53"></px>
 			</item>
 		</nodes>
 	</px>

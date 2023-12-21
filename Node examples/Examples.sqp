@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!DOCTYPE boost_serialization>
-<boost_serialization signature="serialization::archive" version="19">
+<boost_serialization signature="serialization::archive" version="20">
 <mintime>0.000000000e+00</mintime>
 <maxtime>6.000000000e+01</maxtime>
 <currenttime>0.000000000e+00</currenttime>
 <assetlocations class_id="0" tracking_level="0" version="0">
-	<count>4</count>
+	<count>7</count>
 	<item_version>0</item_version>
 	<item>Uniform Repeat.sqa</item>
 	<item>Height to Normal.sqa</item>
 	<item>Uniform Repeat (Color).sqa</item>
 	<item>Scatter Points.sqa</item>
+	<item>Circle Packing.sqa</item>
+	<item>Line Variants.sqa</item>
+	<item>Line Tree.sqa</item>
 </assetlocations>
 </boost_serialization>
 

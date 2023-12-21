@@ -3,10 +3,10 @@
 <boost_serialization signature="serialization::archive" version="20">
 <nodeGraph class_id="0" tracking_level="0" version="1">
 	<px class_id="1" tracking_level="1" version="1" object_id="_0">
-		<name>Random Polygon</name>
+		<name>Line Variants</name>
 		<description></description>
-		<uuid>bcf2097c-726a-432f-b8c7-ff652bf722e8</uuid>
-		<sourceURI>C:/Users/R/Documents/3d/shapesquad/ShapeSquad-Docs/Node examples/Random Polygon.sqa</sourceURI>
+		<uuid>301324b7-d0a3-4d2c-b81a-8e1c2adb94bf</uuid>
+		<sourceURI>C:/Users/R/Documents/3d/shapesquad/ShapeSquad-Docs/Node examples/Line Variants.sqa</sourceURI>
 		<nodes class_id="2" tracking_level="0" version="0">
 			<count>4</count>
 			<item_version>1</item_version>
@@ -2385,48 +2385,47 @@
 									<value>
 										<index>9</index>
 										<value class_id="57" tracking_level="0" version="0">
-											<size>6</size>
+											<size>5</size>
 											<type>0</type>
 											<position class_id="58" tracking_level="0" version="0">
 												<elems>
 													<count>2</count>
-													<item>8.899999857e-01</item>
-													<item>9.000000358e-02</item>
+													<item>6.000000238e-01</item>
+													<item>9.499999881e-01</item>
 												</elems>
 											</position>
 											<type>0</type>
 											<position>
 												<elems>
 													<count>2</count>
-													<item>1.899999976e-01</item>
-													<item>9.800000191e-01</item>
+													<item>-1.899999976e-01</item>
+													<item>1.450000048e+00</item>
 												</elems>
 											</position>
 											<type>0</type>
 											<position>
 												<elems>
 													<count>2</count>
-													<item>-8.799999952e-01</item>
-													<item>7.799999714e-01</item>
+													<item>-1.059999943e+00</item>
+													<item>1.000000000e+00</item>
 												</elems>
 											</position>
 											<type>0</type>
 											<position>
 												<elems>
 													<count>2</count>
-													<item>-1.000000000e+00</item>
-													<item>-7.999999821e-02</item>
+													<item>-8.000000119e-01</item>
+													<item>1.599999964e-01</item>
 												</elems>
 											</position>
 											<type>0</type>
 											<position>
 												<elems>
 													<count>2</count>
-													<item>-5.099999905e-01</item>
-													<item>-6.299999952e-01</item>
+													<item>-1.250000000e+00</item>
+													<item>-4.900000095e-01</item>
 												</elems>
 											</position>
-											<type>1</type>
 										</value>
 									</value>
 								</root>
@@ -3226,16 +3225,16 @@ in polygon(map(update_point, range(0, length(a.points))))
 										<outputId></outputId>
 										<node>
 											<px class_id_reference="4" object_id="_19">
-												<name>Polygon</name>
+												<name>Line</name>
 												<description></description>
 												<metaInfo>
 													<px class_id_reference="6" object_id="_20">
-														<name>Polygon</name>
+														<name>Line</name>
 														<description></description>
 														<variant>
 															<index>4</index>
 															<value>
-																<id>PolygonSDF2_v1</id>
+																<id>LineSDF2_v1</id>
 															</value>
 														</variant>
 														<tags>
@@ -3248,14 +3247,14 @@ in polygon(map(update_point, range(0, length(a.points))))
 															<item>SDF2D/Primitives</item>
 														</categories>
 														<inputMap>
-															<count>1</count>
+															<count>2</count>
 															<item_version>0</item_version>
 															<item>
-																<first>poly</first>
+																<first>path</first>
 																<second>
 																	<px class_id_reference="45" object_id="_21">
 																		<index>0</index>
-																		<name>Polygon</name>
+																		<name>Shape</name>
 																		<description></description>
 																		<type>
 																			<root>
@@ -3268,12 +3267,12 @@ in polygon(map(update_point, range(0, length(a.points))))
 																			<value>
 																				<index>9</index>
 																				<value>
-																					<size>5</size>
+																					<size>3</size>
 																					<type>0</type>
 																					<position>
 																						<elems>
 																							<count>2</count>
-																							<item>-5.000000000e-01</item>
+																							<item>0.000000000e+00</item>
 																							<item>-5.000000000e-01</item>
 																						</elems>
 																					</position>
@@ -3281,32 +3280,16 @@ in polygon(map(update_point, range(0, length(a.points))))
 																					<position>
 																						<elems>
 																							<count>2</count>
-																							<item>-5.000000000e-01</item>
-																							<item>5.000000000e-01</item>
+																							<item>0.000000000e+00</item>
+																							<item>0.000000000e+00</item>
 																						</elems>
 																					</position>
 																					<type>0</type>
 																					<position>
 																						<elems>
 																							<count>2</count>
+																							<item>0.000000000e+00</item>
 																							<item>5.000000000e-01</item>
-																							<item>5.000000000e-01</item>
-																						</elems>
-																					</position>
-																					<type>0</type>
-																					<position>
-																						<elems>
-																							<count>2</count>
-																							<item>5.000000000e-01</item>
-																							<item>-5.000000000e-01</item>
-																						</elems>
-																					</position>
-																					<type>0</type>
-																					<position>
-																						<elems>
-																							<count>2</count>
-																							<item>-5.000000000e-01</item>
-																							<item>-5.000000000e-01</item>
 																						</elems>
 																					</position>
 																				</value>
@@ -3330,6 +3313,52 @@ in polygon(map(update_point, range(0, length(a.points))))
 																	</px>
 																</second>
 															</item>
+															<item>
+																<first>radius</first>
+																<second>
+																	<px class_id_reference="45" object_id="_22">
+																		<index>1</index>
+																		<name>Radius</name>
+																		<description></description>
+																		<type>
+																			<root>
+																				<index>0</index>
+																				<value>3</value>
+																			</root>
+																		</type>
+																		<defaultValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>5.000000075e-02</value>
+																			</value>
+																		</defaultValue>
+																		<minValue>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>0.000000000e+00</value>
+																			</value>
+																		</minValue>
+																		<maxValue>
+																			<valid>0</valid>
+																		</maxValue>
+																		<valueStep>
+																			<valid>1</valid>
+																			<value>
+																				<index>3</index>
+																				<value>9.999999776e-03</value>
+																			</value>
+																		</valueStep>
+																		<options>
+																			<valid>0</valid>
+																		</options>
+																		<precondition>
+																			<valid>0</valid>
+																		</precondition>
+																	</px>
+																</second>
+															</item>
 														</inputMap>
 														<outputMap>
 															<count>1</count>
@@ -3337,7 +3366,7 @@ in polygon(map(update_point, range(0, length(a.points))))
 															<item>
 																<first></first>
 																<second>
-																	<px class_id_reference="52" object_id="_22">
+																	<px class_id_reference="52" object_id="_23">
 																		<index>0</index>
 																		<name></name>
 																		<description></description>
@@ -3354,10 +3383,10 @@ in polygon(map(update_point, range(0, length(a.points))))
 													</px>
 												</metaInfo>
 												<inputMap>
-													<count>1</count>
+													<count>2</count>
 													<item_version>0</item_version>
 													<item>
-														<first>poly</first>
+														<first>path</first>
 														<second>
 															<type>
 																<root>
@@ -3379,6 +3408,27 @@ in polygon(map(update_point, range(0, length(a.points))))
 															</metaInfo>
 														</second>
 													</item>
+													<item>
+														<first>radius</first>
+														<second>
+															<type>
+																<root>
+																	<index>0</index>
+																	<value>3</value>
+																</root>
+															</type>
+															<root>
+																<index>0</index>
+																<value>
+																	<index>3</index>
+																	<value>3.999999911e-02</value>
+																</value>
+															</root>
+															<metaInfo>
+																<px class_id_reference="45" object_id_reference="_22"></px>
+															</metaInfo>
+														</second>
+													</item>
 												</inputMap>
 												<outputMap>
 													<count>1</count>
@@ -3393,7 +3443,7 @@ in polygon(map(update_point, range(0, length(a.points))))
 																</root>
 															</type>
 															<metaInfo>
-																<px class_id_reference="52" object_id_reference="_22"></px>
+																<px class_id_reference="52" object_id_reference="_23"></px>
 															</metaInfo>
 														</second>
 													</item>
@@ -3431,11 +3481,11 @@ in polygon(map(update_point, range(0, length(a.points))))
 													</item>
 													<item>
 														<first>xpos</first>
-														<second>-1080</second>
+														<second>-1089</second>
 													</item>
 													<item>
 														<first>ypos</first>
-														<second>30</second>
+														<second>31</second>
 													</item>
 												</metaDataMap>
 											</px>
@@ -3551,11 +3601,11 @@ in polygon(map(update_point, range(0, length(a.points))))
 				</px>
 			</item>
 			<item>
-				<px class_id_reference="4" object_id="_23">
+				<px class_id_reference="4" object_id="_24">
 					<name>Viewport 0</name>
 					<description></description>
 					<metaInfo>
-						<px class_id_reference="6" object_id="_24">
+						<px class_id_reference="6" object_id="_25">
 							<name>Viewport</name>
 							<description></description>
 							<variant>
@@ -3578,7 +3628,7 @@ in polygon(map(update_point, range(0, length(a.points))))
 								<item>
 									<first></first>
 									<second>
-										<px class_id_reference="45" object_id="_25">
+										<px class_id_reference="45" object_id="_26">
 											<index>0</index>
 											<name>Input</name>
 											<description></description>
@@ -3612,7 +3662,7 @@ in polygon(map(update_point, range(0, length(a.points))))
 								<item>
 									<first>tabbed</first>
 									<second>
-										<px class_id_reference="45" object_id="_26">
+										<px class_id_reference="45" object_id="_27">
 											<index>10</index>
 											<name>Tabbed</name>
 											<description></description>
@@ -3672,7 +3722,7 @@ in polygon(map(update_point, range(0, length(a.points))))
 									</value>
 								</root>
 								<metaInfo>
-									<px class_id_reference="45" object_id_reference="_25"></px>
+									<px class_id_reference="45" object_id_reference="_26"></px>
 								</metaInfo>
 							</second>
 						</item>
@@ -3693,7 +3743,7 @@ in polygon(map(update_point, range(0, length(a.points))))
 									</value>
 								</root>
 								<metaInfo>
-									<px class_id_reference="45" object_id_reference="_26"></px>
+									<px class_id_reference="45" object_id_reference="_27"></px>
 								</metaInfo>
 							</second>
 						</item>
