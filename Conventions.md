@@ -6,7 +6,7 @@
 
 ### Code formatting
 
-Use intendation as appropriate for `let` and `if` expressions.
+Use indentation as appropriate for `let` and `if` expressions.
 
 **Good:**
 
@@ -51,27 +51,27 @@ For public script names, try to avoid non-descriptive names like `a` or `number`
 
 ## File names
 
-Use file names with starting captial letter and spaces as word separators. Naming
+Use file names with starting capital letters and spaces as word separators. Naming
 should reflect the default use case while not being too general.
 
 **Good:** 'Brick Wall', 'Snake Skin'.
 
 **Bad:** 'brick_wall', 'Snake_Skin'.
 
-If an asset has a major change while the original file needs to be kept, then add explicit '_vXXX' suffix to the name.
+If an asset has a major change while the original file needs to be kept, then add an explicit '_vXXX' suffix to the name.
 For example, the original 'Brick Wall' should be renamed to 'Brick Wall_v001' and the new version should be named 'Brick Wall_v002'.
 
 
 ## Folder names
 
-Similar naming scheme should be used for folders, as is used for files. Versioning does not apply to folder names.
+A similar naming scheme should be used for folders, as is used for files. Versioning does not apply to folder names.
 
 
 ## Project files
 
-Project files should contain minimal number of required assets. For very basic assets, there should be 1-1 correspondence between .sqp and .sqa files. 
+Project files should contain the minimal number of required assets. For very basic assets, there should be 1-1 correspondence between .sqp and .sqa files. 
 
-For example, for 'Basic Circle.sqa' the should be 'Basic Circle.sqp' file that contains only reference to 'Basic Circle.sqa' and to no othe assets.
+For example, for 'Basic Circle.sqa' the should be 'Basic Circle.sqp' file that contains only reference to 'Basic Circle.sqa' and to no other assets.
 
 For more complex cases where an asset references to subassets, .sqp file should contain references to both .sqa files.
 
