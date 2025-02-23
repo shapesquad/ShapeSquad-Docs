@@ -219,3 +219,27 @@ let update_point = \(j:Int):Vector2D ->
 in polygon(map(update_point, range(0, length(a.points))))
 ```
 
+### Metals Template
+```
+\(index: Int): { color: Color, rough: Float} ->
+let metals = [
+  { color = rgba(1.0, 0.859, 0.345, 1.0), rough = 0.225 }, // Gold
+  { color = rgba(0.753, 0.753, 0.753, 1.0), rough = 0.16 }, // Silver
+  { color = rgba(0.722, 0.451, 0.2, 1.0), rough = 0.225 }, // Copper
+  { color = rgba(0.82, 0.82, 0.82, 1.0), rough = 0.25 }, // Aluminum
+  { color = rgba(0.627, 0.612, 0.58, 1.0), rough = 0.35 }, // Iron
+  { color = rgba(0.69, 0.69, 0.69, 1.0), rough = 0.25 }, // Steel
+  { color = rgba(0.898, 0.894, 0.886, 1.0), rough = 0.175 }, // Platinum
+  { color = rgba(0.553, 0.553, 0.553, 1.0), rough = 0.5 }, // Lead
+  { color = rgba(0.757, 0.757, 0.757, 1.0), rough = 0.35 }, // Tin
+  { color = rgba(0.761, 0.773, 0.78, 1.0), rough = 0.325 }, // Titanium
+  { color = rgba(0.753, 0.757, 0.769, 1.0), rough = 0.35 }, // Zinc
+  { color = rgba(0.706, 0.714, 0.725, 1.0), rough = 0.175 }, // Chromium
+  { color = rgba(0.71, 0.725, 0.729, 1.0), rough = 0.25 }, // Nickel
+  { color = rgba(0.71, 0.651, 0.259, 1.0), rough = 0.25 }, // Brass
+  { color = rgba(0.804, 0.498, 0.196, 1.0), rough = 0.35 } // Bronze
+],
+colors = map(\(metal: { color: Color, rough: Float }):Color -> metal.color, metals),
+roughs = map(\(metal: { color: Color, rough: Float }):Float -> metal.rough, metals)
+in { color =  at(colors, index), rough = at(roughs, index) } 
+```
