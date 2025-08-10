@@ -83,7 +83,7 @@ boolean value a result. `==` and `!=` are also available for boolean arguments.
 | Operation         | Syntax        | Description                                        |
 |-------------------|---------------|----------------------------------------------------|
 | And      | `a && b`       | Returns true if both `a` and `b` are true, else false|
-| Or       | `a || b`       | Returns true if either `a` or `b` is true, else false|
+| Or       | `a \|\| b`       | Returns true if either `a` or `b` is true, else false|
 | Not      | `!a`           | Returns true if `a` is false and false if `a` is true|
 
 All logic operations expect boolean arguments and return boolean value as a result.
