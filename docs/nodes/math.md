@@ -69,9 +69,9 @@ All arithmetic operations expect floating point arguments and return floating po
 |-------------------|---------------|----------------------------------------------------|
 | Greater Than      | `a > b`       | Returns true if `a` is greater than `b`, else false|
 | Less Than         | `a < b`       | Returns true if `a` is less than `b`, else false   |
-| Greater Than or Equal | `a >= b`  | Returns true if `a` is greater than `b`, else false|
+| Greater Than or Equal | `a >= b`  | Returns true if `a` is greater than or equal to `b`, else false|
 | Less Than         | `a < b`       | Returns true if `a` is less than `b`, else false   |
-| Less Than or Equal | `a <= b`     | Returns true if `a` is less than `b`, else false   |
+| Less Than or Equal | `a <= b`     | Returns true if `a` is less than or equal to `b`, else false |
 | Equal             | `a == b`      | Returns true if `a` equals `b`, else false         |
 | Not Equal         | `a != b`      | Returns true if `a` does not equal `b`, else false |
 
