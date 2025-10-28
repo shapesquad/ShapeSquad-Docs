@@ -48,14 +48,17 @@ s0.parentNode.insertBefore(s1,s0);
       {
         text: 'General',
         items: [
-          { text: 'Getting Started', link: '/general/getting_started' }
+          { text: 'Getting Started', link: '/general/getting_started' },
+          { text: 'Compatibility', link: '/general/compatibility' }
         ]
       },
       {
         text: 'Nodes',
         collapsed: false,
         items: [
-          { text: 'Math', link: '/nodes/math' }
+          { text: 'Math', link: '/nodes/math' },
+          { text: 'Channels', link: '/nodes/channels' },
+          { text: 'Output', link: '/nodes/output' }
         ]
       },
       {
@@ -69,7 +72,7 @@ s0.parentNode.insertBefore(s1,s0);
 
     // Footer
     footer: {
-      copyright: 'Copyright © 2025 Shapesquad'
+      copyright: 'Copyright © Shapesquad'
     },
 
     // Search (local search)
