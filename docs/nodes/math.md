@@ -97,7 +97,7 @@ a > b ? true : false
 For example, a condition *'if an input called noise is larger than 0.5, use blue color, else use red color'* would look like that:
 
 ```
-noise > 0.5 ? rgba(0, 0, 1.0) : rgba(1.0, 0, 0)
+noise > 0.5 ? rgba(0, 0, 1.0, 1) : rgba(1.0, 0, 0, 1)
 ```
 
 ### Type conversion
