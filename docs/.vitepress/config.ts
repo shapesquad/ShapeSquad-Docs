@@ -57,6 +57,7 @@ s0.parentNode.insertBefore(s1,s0);
         collapsed: false,
         items: [
           { text: 'Math', link: '/nodes/math' },
+          { text: 'TODO: Channels', link: '/nodes/channels' },
           { text: 'Output', link: '/nodes/output' }
         ]
       },
