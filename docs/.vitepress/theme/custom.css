@@ -3,6 +3,8 @@
   --vp-c-brand-2: #8a6cff;
   --vp-c-brand-3: #a287ff;
   --vp-c-brand-soft: rgba(114, 81, 255, 0.16);
+  --vp-code-color: #ac97ff;
+  --vp-code-block-color: #ac97ff;
 
   /* Light Mode Text Colors */
   --vp-c-text-1: rgba(60, 60, 67);
