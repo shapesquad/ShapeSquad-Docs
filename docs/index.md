@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "Artlets"
-  text: "The place to do it all"
-  tagline: "Complete texturing experience, on the web"
+  text: "Complete texturing, on the web"
+  tagline: "A complete node-based texturing platform"
   actions:
     - theme: brand
       text: Read Docs
