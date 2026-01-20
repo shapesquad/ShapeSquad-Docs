@@ -7,10 +7,10 @@ hero:
   tagline: "A complete node-based texturing platform"
   actions:
     - theme: brand
-      text: Read Docs
+      text: Quick Start
       link: /general/getting_started
     - theme: alt
-      text: Go to Artlets
+      text: Open Artlets
       link: "https://artlets.co"
   image:
     src: /main_hero.png
@@ -18,10 +18,10 @@ hero:
 
 features:
   - title: Getting Started ->
-    details: Watch the quick start tutorial to understand the texturing flow in Artlets.
+    details: Watch quick tutorial to understadn how to make materials.
     link: /general/getting_started
   
   - title: Nodes ->
-    details: Learn about the built-in nodes and how to use them.
+    details: Learn about built-in nodes and how to use them.
     link: /nodes/math
 ---
