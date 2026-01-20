@@ -1,10 +1,10 @@
 # Compatibility
 
-Artlets uses a new graphics API called WebGPU to carry out high-performance computations in the browser. WebGPU is still a new technology, but it's already pretty well supported by browsers. 
+Artlets uses a new graphics API called WebGPU to carry out high-performance computations in the browser. WebGPU is still a new technology, but already pretty well supported by browsers. 
 
-Hiccups can happen though, so here's all the information you need to run Artlets smoothly on Windows, MacOS and Linux.
+Here's all the information you need to run Artlets smoothly on Windows, MacOS and Linux.
 
-For a detailed compatibility report you can check out the [WebGPU implementation status](https://github.com/gpuweb/gpuweb/wiki/Implementation-Status).
+For an official WebGPU compatibility report you can check out the [WebGPU implementation status](https://github.com/gpuweb/gpuweb/wiki/Implementation-Status).
 
 ## Windows
 
@@ -16,7 +16,7 @@ Chrome gives you the best experience. Starting from macOS Tahoe 26, you can also
 
 ## Linux
 
-Chrome gives you the best experience. However by default Chrome will not have WebGPU support, you need to enable it yourself.
+Chrome gives you the best experience. However by default Chrome will not have WebGPU enabled, you need to enable it yourself.
 
 - First, enable the experimental WebGPU flag in Chrome: go to **chrome://flags** and enable *Unsafe WebGPU support*.
 
