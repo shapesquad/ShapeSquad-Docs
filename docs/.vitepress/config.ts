@@ -57,7 +57,10 @@ s0.parentNode.insertBefore(s1,s0);
         collapsed: false,
         items: [
           { text: 'Math', link: '/nodes/math' },
-          { text: 'Output', link: '/nodes/output' }
+          { text: 'Output', link: '/nodes/output' },
+          { text: 'Channels', link: '/nodes/channels' },
+          { text: 'Gradient', link: '/nodes/gradient' },
+          { text: 'Transform', link: '/nodes/transform' }
         ]
       },
       {
