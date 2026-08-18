@@ -60,7 +60,9 @@ s0.parentNode.insertBefore(s1,s0);
           { text: 'Output', link: '/nodes/output' },
           { text: 'Channels', link: '/nodes/channels' },
           { text: 'Gradient', link: '/nodes/gradient' },
-          { text: 'Transform', link: '/nodes/transform' }
+          { text: 'Transform', link: '/nodes/transform' },
+          { text: 'Range Map', link: '/nodes/range_map' },
+          { text: 'Scatter', link: '/nodes/scatter' }
         ]
       },
       {
