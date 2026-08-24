@@ -63,7 +63,8 @@ s0.parentNode.insertBefore(s1,s0);
           { text: 'Transform', link: '/nodes/transform' },
           { text: 'Range Map', link: '/nodes/range_map' },
           { text: 'Normalize', link: '/nodes/normalize' },
-          { text: 'Scatter', link: '/nodes/scatter' }
+          { text: 'Scatter', link: '/nodes/scatter' },
+          { text: 'Mix', link: '/nodes/mix' }
         ]
       },
       {
