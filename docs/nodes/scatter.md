@@ -2,7 +2,7 @@
 
 The *Scatter* node lets you randomly place a number of elements into your texture space. It is a good fit for scattering small, repeating elements across a surface — things like dust particles, pebbles, or rocks — either in a regular grid or in a randomized one.
 
-<img src="/scatter_node.png" alt="Scatter node" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/scatter_node.png" alt="Scatter node" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 ## Inputs
 
@@ -14,7 +14,7 @@ The *Scatter* node has one default input:
 
 The node has a set of parameters that determine how the element is scattered:
 
-<img src="/scatter_parameters.png" alt="Scatter node parameters" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/scatter_parameters.png" alt="Scatter node parameters" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 ### Location
 

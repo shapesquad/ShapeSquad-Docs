@@ -9,11 +9,11 @@ Unlike other nodes, the *Math* node has no fixed inputs. Instead, inputs appear 
 
 For example, writing `a*b` into the expression field create two inputs `a` and `b` which are multiplied: 
 
-<img src="/math_ab.png" alt="Math node example" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/math_ab.png" alt="Math node example" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 Similarly, writing `Leather + Wrinkles * Wrinkle_Factor` results in such inputs:
 
-<img src="/math_threeinputs.png" alt="Math node example" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/math_threeinputs.png" alt="Math node example" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 The types (either `Bool`, `Int`, `Float`, `Color` or `Material`) of inputs are automatically inferred from the context where inputs are used. The most general valid type is automatically used. But it is possible to constrain or specify input types manually using the following syntax: `(a :: Int)`.
 

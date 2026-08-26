@@ -2,7 +2,7 @@
 
 The *Normalize* node lets you automatically remap the values of an input texture between `0` and `1`. It finds the darkest and the brightest spot in the image and stretches them to the full available contrast range, so that the darkest spot becomes `0` in brightness and the brightest spot becomes `1`.
 
-<img src="/normalize_node.png" alt="Normalize node" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/normalize_node.png" alt="Normalize node" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 ## Inputs
 
