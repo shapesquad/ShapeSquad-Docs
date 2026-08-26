@@ -3,7 +3,7 @@
 
 The *Channels* node lets you create a PBR material and decide what goes into its channels. It can be used to build a custom material from scratch, or to replace and modify the PBR channels of an existing material.
 
-<img src="/channels_node.png" alt="Channels node" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/channels_node.png" alt="Channels node" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 ## Inputs
 
@@ -15,7 +15,7 @@ The *Channels* node has one input:
 
 The node has one parameter for each PBR channel:
 
-<img src="/channels_parameters.png" alt="Channels node parameters" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/channels_parameters.png" alt="Channels node parameters" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 * **Output Base Color**
 * **Output Height**
@@ -51,4 +51,9 @@ Connect a material, then set the channel you don't want to use to *Default* or *
 ### Adding a channel
 
 Connect a material that is missing a channel (for example, a material with no height). Under *Output Height*, set the parameter to *Custom*, enable the connection button, and connect a node such as a noise texture. This adds a height channel to your PBR material.
+
+::: tip NOTE
+
+For separating a material into its individual channels, inspecting them, and combining them into new materials, you can also use the [Separate Material](/nodes/separate_material) and [Combine Material](/nodes/combine_material) nodes.
+:::
 

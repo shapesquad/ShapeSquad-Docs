@@ -2,7 +2,7 @@
 
 The *Transform* node lets you move a material in UV space and offset it in height.
 
-<img src="/transform_node.png" alt="Transform node" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/transform_node.png" alt="Transform node" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 ## Inputs
 
@@ -14,7 +14,7 @@ The *Transform* node has one default input:
 
 The node has a set of parameters that determine how the material is moved:
 
-<img src="/transform_parameters.png" alt="Transform node parameters" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/transform_parameters.png" alt="Transform node parameters" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 * **Translate X** — moves the material along the U axis. The value goes from `-1` to `1`, as there is no point in moving it further — that would go out of the UV range.
 * **Translate Y** — moves the material along the V axis. The value goes from `-1` to `1`.

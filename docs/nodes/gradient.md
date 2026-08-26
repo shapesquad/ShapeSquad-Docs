@@ -2,7 +2,7 @@
 
 The *Gradient* node lets you translate a grayscale value into a color value. It is generally used to remap black-and-white values (such as a noise texture) into a custom color palette.
 
-<img src="/gradient_node.png" alt="Gradient node" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/gradient_node.png" alt="Gradient node" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 ## Inputs
 
@@ -20,7 +20,7 @@ The ramp comes with two pre-existing points. You can drag the handles of these p
 
 Each point on the gradient has the following parameters:
 
-<img src="/gradient_parameters.png" alt="Gradient node parameters" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/gradient_parameters.png" alt="Gradient node parameters" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 * **Position** — the position of the point on the ramp. You can also change it by sliding the point along the ramp. It expresses the grayscale brightness that will be translated into a color.
 * **Interpolation** — determines how the color from the neighboring point on the ramp blends into the color of this point. The available modes are:

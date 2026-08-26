@@ -7,7 +7,7 @@ What's connected to the *Output* node gets shown on the mesh in the Viewport. Th
 
 The *Output* node has one input - what you connect there will be mapped onto your selected mesh and shown in the Viewport. 
 
-<img src="/output_node.png" alt="Math node example" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/output_node.png" alt="Math node example" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 ::: tip NOTE
 

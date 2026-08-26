@@ -2,7 +2,7 @@
 
 The *Range Map* node lets you remap a value range to another value range. Visually, this usually means that you either decrease or increase the contrast or the overall brightness of a texture.
 
-<img src="/range_map_node.png" alt="Range Map node" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/range_map_node.png" alt="Range Map node" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 ## Inputs
 
@@ -14,7 +14,7 @@ The *Range Map* node has one default input:
 
 The node has four parameters:
 
-<img src="/range_map_parameters.png" alt="Range Map node parameters" style=" border-radius: 6px; margin: 16px 0;" />
+<img src="/range_map_parameters.png" alt="Range Map node parameters" style=" border-radius: 6px; margin: 16px 0 32px 0;" />
 
 * **From Min** — the minimum value of the incoming range.
 * **From Max** — the maximum value of the incoming range.
