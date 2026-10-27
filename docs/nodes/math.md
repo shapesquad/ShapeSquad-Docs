@@ -110,8 +110,14 @@ You can convert values with following functions:
 | Int       | `int(v)` | Converts floating point or boolean value to integer value|
 | Color     | `rgb(r, g, b)`       | Outputs a color of three components|
 | Color     | `rgba(r, g, b, a)`       | Outputs a color of four components|
-| Material  | `pbr(color=rgba(0.8, 0.8, 0.8, 1.0), roughness=0.5, metallic=0.0, height=0.1)`| Outputs a material with specified PBR channel values. 
+| Material  | `pbr(color=rgba(0.8, 0.8, 0.8, 1.0), roughness=0.5, metallic=0.0, height=0.1)`| Outputs a material with specified PBR channel values. The optional `normal=` (a normal map color, OpenGL convention, components in 0..1) and `ao=` (ambient occlusion, 0..1) arguments set the normal and occlusion channels explicitly; without them both are derived from the height. | 
 
+
+### Material channels
+
+A single channel of a material input can be read with a dot, for example `Leather.color`, `Leather.height`, `Leather.roughness`, `Leather.metallic`, `Leather.opacity`, `Leather.normal` or `Leather.ao`. Reading `normal` or `ao` from a material that does not provide them gives the map derived from its height, the same one the viewer shows for that material.
+
+One exception: reading them from a `pbr(...)` written inline in a node whose output is not a material, such as `pbr(height=h).normal` in a node that outputs a color, gives the flat normal (or an occlusion of 1). Connect the material as an input, or let the node output a material, to get the derived maps.
 
 ### Coordinates
 
