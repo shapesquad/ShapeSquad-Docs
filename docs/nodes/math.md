@@ -109,7 +109,7 @@ You can convert values with following functions:
 | Bool      | `bool(v)` | Converts integer or floating point value to boolean value|
 | Int       | `int(v)` | Converts floating point or boolean value to integer value|
 | Color     | `rgb(r, g, b)`       | Outputs a color of three components|
-| Color     | `rgba(r, g, b, a)`       | Outputs a color of four components|
+| Color     | `rgba(r, g, b, a)`       | Outputs a color of four components. The color components are premultiplied by the alpha: red with alpha 0.5 is `rgba(0.5, 0, 0, 0.5)`, not `rgba(1, 0, 0, 0.5)`. The alpha of a material color blends layers in a Mix node and is written to exported images; the transparency of the material itself is its opacity channel|
 | Material  | `pbr(color=rgba(0.8, 0.8, 0.8, 1.0), roughness=0.5, metallic=0.0, height=0.1)`| Outputs a material with specified PBR channel values. The optional `normal=` (a normal map color, OpenGL convention, components in 0..1) and `ao=` (ambient occlusion, 0..1) arguments set the normal and occlusion channels explicitly; without them both are derived from the height. | 
 
 
