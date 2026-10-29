@@ -23,7 +23,7 @@ The node has a set of parameters for each layer:
 At the top of the node, you will see round bubbles with numbers. Each number corresponds to a layer, and you can click on them to switch between layers and change the parameters of that specific layer.
 
 * **Disable This Layer** — excludes the layer from the mixing process. The layer will not be shown in the output of the node.
-* **Opacity** — gradually makes the layer disappear. This is essentially a blendable *Disable This Layer* parameter.
+* **Opacity** — gradually makes the layer disappear. This is essentially a blendable *Disable This Layer* parameter: where the opacity is `0`, for example where a mask connected to it is black, the layer has no effect at all.
 
 * **Height Scale** — a multiplier for the height channel of the layer. Use it to make the layer height more pronounced or flatter.
 * **Height Offset** — offsets the layer up or down in height. This is essentially the same as using a [Transform](/nodes/transform) node with *Height Offset*. For example, if you have pavement stones in sand, you can move the stones up and down inside sand.
@@ -38,6 +38,7 @@ At the top of the node, you will see round bubbles with numbers. Each number cor
 
 * **Channel blend modes** — up to five options that determine the mixing mode and factor for each individual channel. If your material contains *Base Color* and *Roughness*, you have settings for *Base Color* and *Roughness*. If it contains *Metallic* as well, you have a setting for *Metallicness*. Each channel has a *Blend Mode* and a *Factor*:
   * **Blend Mode** — determines how the channel of this layer is combined with the layer below. For example, you can just blend the *Base Color* on top of the bottom layer, multiply it with the bottom layer, or use any other blend mode.
+  * For the *Normal* channel the blend modes are *Blend*, which fades between the normal maps, and the detail modes *Detail (RNM)*, *Detail (Whiteout)* and *Detail (UDN)*, which add the normal detail of the layer on top of the normal below, as the [Normal Blend](/nodes/normal_blend) node does.
   * **Factor** — determines how much the channel is used. For example, you can turn off a specific channel from mixing by setting the factor to `0`. If you don't want the *Roughness* of the top layer to override the bottom layer's *Roughness*, you just turn the factor to `0`, and only the bottom layer's *Roughness* will be output from the *Mix* node.
 
 These settings are available on every single layer, however many you add — the *Mix* node supports 64 layers, and you can tune the settings for each one of them.
