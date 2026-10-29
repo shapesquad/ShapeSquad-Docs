@@ -115,9 +115,7 @@ You can convert values with following functions:
 
 ### Material channels
 
-A single channel of a material input can be read with a dot, for example `Leather.color`, `Leather.height`, `Leather.roughness`, `Leather.metallic`, `Leather.opacity`, `Leather.normal` or `Leather.ao`. Reading `normal` or `ao` from a material that does not provide them gives the map derived from its height, the same one the viewer shows for that material.
-
-One exception: reading them from a `pbr(...)` written inline in a node whose output is not a material, such as `pbr(height=h).normal` in a node that outputs a color, gives the flat normal (or an occlusion of 1). Connect the material as an input, or let the node output a material, to get the derived maps.
+A single channel of a material input can be read with a dot, for example `Leather.color`, `Leather.height`, `Leather.roughness`, `Leather.metallic`, `Leather.opacity`, `Leather.normal` or `Leather.ao`. Reading `normal` or `ao` from a material that does not provide them gives the map derived from its height, the same one the viewer shows for that material. This also works for a `pbr(...)` written inline, in a node of any output type: `pbr(height=h).normal` gives the normal derived from `h`.
 
 ### Coordinates
 
