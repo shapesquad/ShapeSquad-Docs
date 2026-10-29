@@ -49,7 +49,9 @@ s0.parentNode.insertBefore(s1,s0);
         text: 'General',
         items: [
           { text: 'Getting Started', link: '/general/getting_started' },
-          { text: 'Compatibility', link: '/general/compatibility' }
+          { text: 'Compatibility', link: '/general/compatibility' },
+          { text: 'Export', link: '/general/export' },
+          { text: 'Node and Material Settings', link: '/general/node_settings' }
         ]
       },
       {
@@ -67,7 +69,11 @@ s0.parentNode.insertBefore(s1,s0);
           { text: 'Normalize', link: '/nodes/normalize' },
           { text: 'Scatter', link: '/nodes/scatter' },
           { text: 'Mix', link: '/nodes/mix' },
-          { text: 'Smear', link: '/nodes/smear' }
+          { text: 'Smear', link: '/nodes/smear' },
+          { text: 'Normal Blend', link: '/nodes/normal_blend' },
+          { text: 'Normal Adjust', link: '/nodes/normal_adjust' },
+          { text: 'Curvature', link: '/nodes/curvature' },
+          { text: 'Slope', link: '/nodes/slope' }
         ]
       },
       {
