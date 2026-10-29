@@ -50,7 +50,8 @@ s0.parentNode.insertBefore(s1,s0);
         items: [
           { text: 'Getting Started', link: '/general/getting_started' },
           { text: 'Compatibility', link: '/general/compatibility' },
-          { text: 'Export', link: '/general/export' }
+          { text: 'Export', link: '/general/export' },
+          { text: 'Node and Material Settings', link: '/general/node_settings' }
         ]
       },
       {

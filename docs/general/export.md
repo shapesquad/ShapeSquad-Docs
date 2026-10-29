@@ -14,6 +14,8 @@ For each row you choose:
 
 The *Normal* row also lets you choose the convention: *OpenGL* (default) or *DirectX*.
 
+*PNG* files are rendered at the material's [precision](/general/node_settings#material-precision); *PNG 16-bit* and *EXR* files are always rendered at 32-bit float. The *Output size* and *Precision* of a node apply to exports too (see [Node settings](/general/node_settings#node-settings)).
+
 The *Master Controls* row sets the file name template and changes every row (packed maps included) at once. The template takes the placeholders `{material}`, `{channel}` and `{resolution}`; a `/` creates a folder. The default `{material}/{channel}_{resolution}` writes files like `Rusty_Metal/roughness_2048x2048.png`. If two files would get the same name, the later one gets a `_2` suffix.
 
 The dialog remembers your settings for each asset in this browser.
