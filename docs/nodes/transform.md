@@ -21,7 +21,7 @@ The node has a set of parameters that determine how the material is moved:
 * **Scale** — changes the scale of the material. The value goes from `0.01` to `100`.
 * **Scale Aspect** — squeezes the material vertically or horizontally.
 * **Rotation** — rotates the material around the Z axis.
-* **Height Scale** — multiplies the height of the material. A normal map of the material gets stronger or weaker by the same amount, and a negative value flips it along with the height. This parameter is grayed out if the connected material has neither a height nor a normal channel.
+* **Height Scale** — multiplies the height of the material. With **Scale Normals** on, a normal map of the material gets stronger or weaker by the same amount; a negative value flips it along with the height. This parameter is grayed out if the connected material has neither a height nor a normal channel.
 * **Height Offset** — adds a value to the height of the material, offsetting it up or down. For example, if you have some ceramic tiles in sand, you can move the tiles up and down inside of the sand to get the look you like.
 * **Repeat mode** — applies to the areas of the material that get revealed once you have moved the material away from the main UV area or scaled it down. The available modes are:
   * **None** — no tiling behavior. The material is simply removed outside of the UV area.
