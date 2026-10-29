@@ -49,7 +49,8 @@ s0.parentNode.insertBefore(s1,s0);
         text: 'General',
         items: [
           { text: 'Getting Started', link: '/general/getting_started' },
-          { text: 'Compatibility', link: '/general/compatibility' }
+          { text: 'Compatibility', link: '/general/compatibility' },
+          { text: 'Export', link: '/general/export' }
         ]
       },
       {
