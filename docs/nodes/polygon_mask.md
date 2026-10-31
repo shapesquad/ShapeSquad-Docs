@@ -22,4 +22,4 @@ The node properties show the polygon over the texture area:
 * Select a point to type its **X** and **Y**, and press **Delete** to remove it.
 * Scroll to zoom, drag the background to pan, and press **Fit** to show the whole polygon. You can drag the bottom of the view to change its height.
 
-The coordinates go from `0` to `1` across the texture: **X** grows to the right and **Y** grows downwards, so `0, 0` is the top left corner. These are the same coordinates as `u()` and `v()` in the [Math](/nodes/math) node.
+The coordinates go from `0` to `1` across the texture: **X** grows to the right and **Y** grows upwards, so `0, 0` is the bottom left corner and `1, 1` the top right one. These are the same coordinates as `u()` and `v()` in the [Math](/nodes/math) node.
