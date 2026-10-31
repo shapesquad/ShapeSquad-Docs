@@ -19,7 +19,7 @@ The node properties show the polygon over the texture area:
 
 * Drag a point to move it.
 * Double-click a line to add a point there, or press **+ Point**.
-* Select a point to type its **X** and **Y**, and press **Delete** to remove it.
-* Scroll to zoom, drag the background to pan, and press **Fit** to show the whole polygon. You can drag the bottom of the view to change its height.
+* Select a point to type its **U** and **V**, and press **Delete** (or the Delete key) to remove it.
+* Scroll to zoom, drag the background to pan, and press **Fit** to show the whole polygon. Drag the bottom-right corner of the view to change its height.
 
 The coordinates go from `0` to `1` across the texture: **X** grows to the right and **Y** grows upwards, so `0, 0` is the bottom left corner and `1, 1` the top right one. These are the same coordinates as `u()` and `v()` in the [Math](/nodes/math) node.

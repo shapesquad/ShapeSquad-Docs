@@ -14,9 +14,9 @@ A new node has two points, at `0, 0` and `1, 1`: a straight line that passes the
 
 * Drag a point to move it.
 * Double-click the curve to add a point there, or press **+ Point**.
-* Select a point to type its **X** and **Y**, and press **Delete** to remove it.
+* Select a point to type its **X** and **Y**, and press **Delete** (or the Delete key) to remove it.
 * Drag the handles of the selected point to change the shape of the curve next to it.
-* Scroll to zoom, drag the background to pan, and press **Fit** to show the whole curve. You can drag the bottom of the view to change its height.
+* Scroll to zoom, drag the background to pan, and press **Fit** to show the whole curve. Drag the bottom-right corner of the view to change its height.
 
 ## Point parameters
 
