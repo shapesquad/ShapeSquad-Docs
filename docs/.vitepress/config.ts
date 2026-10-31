@@ -64,6 +64,8 @@ s0.parentNode.insertBefore(s1,s0);
           { text: 'Separate Material', link: '/nodes/separate_material' },
           { text: 'Combine Material', link: '/nodes/combine_material' },
           { text: 'Gradient', link: '/nodes/gradient' },
+          { text: 'FCurve', link: '/nodes/fcurve' },
+          { text: 'Polygon Mask', link: '/nodes/polygon_mask' },
           { text: 'Transform', link: '/nodes/transform' },
           { text: 'Range Map', link: '/nodes/range_map' },
           { text: 'Normalize', link: '/nodes/normalize' },
