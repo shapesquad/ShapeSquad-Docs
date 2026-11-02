@@ -54,9 +54,11 @@ When you ask, the assistant exports the textures as a zip file or the model as a
 
 Ask how something works, for example "what does Add to Last Layer do in the Mix node?". The assistant answers from this documentation and links the page it used.
 
-## Accepting or rejecting changes
+## Undoing changes
 
-When a reply has changed something, **Accept changes** and **Reject changes** appear at the bottom right of the node graph. *Reject changes* undoes everything the reply did: graph edits, new and duplicated materials, and mesh parts moved to another material. Images it uploaded as assets stay in your assets. Accept or reject before you send the next request.
+The assistant's changes are kept and saved as soon as its reply is done, and the nodes it added or changed glow for a few seconds. You can go on working or send the next request right away.
+
+When a reply has changed something, **Undo assistant changes** appears at the bottom right of the node graph. It undoes everything the reply did: graph edits, new and duplicated materials, and mesh parts moved to another material. Press it again to undo the reply before that. Images it uploaded as assets stay in your assets. Once you edit the graph yourself the button goes away, since undoing would also lose your edit; <kbd>Ctrl</kbd>+<kbd>Z</kbd> still steps back through the graph's history.
 
 While a request runs, the send button becomes a stop button that cancels it.
 
