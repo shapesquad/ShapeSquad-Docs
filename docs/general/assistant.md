@@ -10,6 +10,8 @@ Describe the result you want, as you would to a colleague: "make the rust only a
 
 The assistant is careful with what you already have: it changes the connections and parameters of existing nodes only when you ask for it, and builds a new setup next to your graph without connecting it, unless you say where it goes ("...and mix it over the base material"). It tells you what it did, and the nodes it added or changed are highlighted in the graph.
 
+When the next step depends on your choice, for example when there are several ways to fix something, the assistant asks and shows the options under its reply. Click one to go on, or type your own answer instead. Some questions let you pick several options; tick them and press *Send*.
+
 ## Editing the node graph
 
 The assistant adds, removes, connects and renames nodes and changes their parameters. A larger change, such as building a new layer from several nodes, is made in one go: either all of it is applied or, if something does not fit, none of it.
