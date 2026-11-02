@@ -5,7 +5,7 @@
 // Format:
 // {"generated_at": "...", "base_url": "https://docs.artlets.co",
 //  "pages": [{"path": "/nodes/mix", "title": "Mix",
-//             "sections": [{"heading": "Inputs", "anchor": "inputs", "text": "..."}]}]}
+//             "sections": [{"heading": "Inputs", "anchor": "inputs", "level": 2, "text": "..."}]}]}
 
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { dirname, join, relative, sep } from 'node:path'
@@ -172,7 +172,7 @@ function buildPage(file) {
 
   let title = frontmatterTitle
   let titleTaken = false
-  const sections = [{ heading: null, anchor: '', lines: [] }]
+  const sections = [{ heading: null, anchor: '', level: 1, lines: [] }]
   for (const chunk of chunks(body)) {
     if (chunk.code) {
       sections.at(-1).lines.push(chunk.text)
@@ -193,7 +193,7 @@ function buildPage(file) {
         titleTaken = true
         title = title || text
       } else if (level <= 3) {
-        sections.push({ heading: text, anchor, lines: [] })
+        sections.push({ heading: text, anchor, level, lines: [] })
       } else {
         sections.at(-1).lines.push(line)
       }
@@ -205,7 +205,7 @@ function buildPage(file) {
     path: routeOf(file),
     title,
     sections: sections
-      .map(({ heading, anchor, lines }) => ({ heading: heading ?? title, anchor, text: tidy(lines) }))
+      .map(({ heading, anchor, level, lines }) => ({ heading: heading ?? title, anchor, level, text: tidy(lines) }))
       .filter((section, i) => i > 0 || section.text),
   }
 }
