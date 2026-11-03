@@ -1,7 +1,7 @@
 
 # Output
 
-What's connected to the *Output* node gets shown on the mesh in the Viewport. There can be only one output node in the graph.
+What's connected to the *Output* node gets shown on the mesh in the Viewport. A material graph has one *Material* output. Its top level can also have extra *Color* and *Float* outputs: the viewport ignores them, and the texture export writes each one as a map of its own (see [Export](/general/export#extra-maps)).
 
 ## Inputs
 

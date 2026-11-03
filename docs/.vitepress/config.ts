@@ -49,7 +49,10 @@ s0.parentNode.insertBefore(s1,s0);
         text: 'General',
         items: [
           { text: 'Getting Started', link: '/general/getting_started' },
-          { text: 'Compatibility', link: '/general/compatibility' }
+          { text: 'Compatibility', link: '/general/compatibility' },
+          { text: 'Export', link: '/general/export' },
+          { text: 'Node and Material Settings', link: '/general/node_settings' },
+          { text: 'AI Assistant', link: '/general/assistant' }
         ]
       },
       {
@@ -62,12 +65,18 @@ s0.parentNode.insertBefore(s1,s0);
           { text: 'Separate Material', link: '/nodes/separate_material' },
           { text: 'Combine Material', link: '/nodes/combine_material' },
           { text: 'Gradient', link: '/nodes/gradient' },
+          { text: 'FCurve', link: '/nodes/fcurve' },
+          { text: 'Polygon Mask', link: '/nodes/polygon_mask' },
           { text: 'Transform', link: '/nodes/transform' },
           { text: 'Range Map', link: '/nodes/range_map' },
           { text: 'Normalize', link: '/nodes/normalize' },
           { text: 'Scatter', link: '/nodes/scatter' },
           { text: 'Mix', link: '/nodes/mix' },
-          { text: 'Smear', link: '/nodes/smear' }
+          { text: 'Smear', link: '/nodes/smear' },
+          { text: 'Normal Blend', link: '/nodes/normal_blend' },
+          { text: 'Normal Adjust', link: '/nodes/normal_adjust' },
+          { text: 'Curvature', link: '/nodes/curvature' },
+          { text: 'Slope', link: '/nodes/slope' }
         ]
       },
       {

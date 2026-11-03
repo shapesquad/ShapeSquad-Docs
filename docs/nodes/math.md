@@ -63,6 +63,22 @@ All arithmetic operations expect floating point arguments and return floating po
 | Saturation adjustment | `saturation(a, factor)` | Adjusts color given saturation `factor` (0 for grayscale, 1 for original color) |
 
 
+### Vector operations
+
+The red, green and blue components of a color are also an X, Y, Z vector, which is how normal maps store the direction of the surface. The components can be read as `c.x`, `c.y`, `c.z` and `c.w`, the same as `c.r`, `c.g`, `c.b` and `c.a`.
+
+| Operation      | Syntax           | Description                          |
+|----------------|------------------|--------------------------------------|
+| Normalize      | `normalize(v)`   | Vector of length 1 in the direction of `v`, the alpha is kept |
+| Length         | `length(v)`      | Length of the vector `v`             |
+| Dot product    | `dot(a, b)`      | Dot product of the vectors `a` and `b` |
+| Cross product  | `cross(a, b)`    | Cross product of the vectors `a` and `b`, with alpha 1 |
+| Decode normal  | `decodenormal(n)` | Converts a normal map color (components from `0` to `1`) to a vector (components from `-1` to `1`), the alpha is kept |
+| Encode normal  | `encodenormal(v)` | Converts a vector (components from `-1` to `1`) to a normal map color (components from `0` to `1`), the alpha is kept |
+
+For example, `let d = decodenormal(n) in encodenormal(normalize(rgb(d.x * 2.0, d.y * 2.0, d.z)))` makes the bumps of a normal map `n` twice as steep, and `dot(decodenormal(n), rgb(0.0, 0.0, 1.0))` is the cosine of the slope of the surface. The [Normal Adjust](/nodes/normal_adjust), [Normal Blend](/nodes/normal_blend), [Curvature](/nodes/curvature) and [Slope](/nodes/slope) nodes cover the common normal map operations.
+
+
 ### Comparison
 
 | Operation         | Syntax        | Description                                        |
@@ -109,15 +125,13 @@ You can convert values with following functions:
 | Bool      | `bool(v)` | Converts integer or floating point value to boolean value|
 | Int       | `int(v)` | Converts floating point or boolean value to integer value|
 | Color     | `rgb(r, g, b)`       | Outputs a color of three components|
-| Color     | `rgba(r, g, b, a)`       | Outputs a color of four components|
+| Color     | `rgba(r, g, b, a)`       | Outputs a color of four components. The color components are premultiplied by the alpha: red with alpha 0.5 is `rgba(0.5, 0, 0, 0.5)`, not `rgba(1, 0, 0, 0.5)`. The alpha of a material color blends layers in a Mix node and is written to exported images; the transparency of the material itself is its opacity channel|
 | Material  | `pbr(color=rgba(0.8, 0.8, 0.8, 1.0), roughness=0.5, metallic=0.0, height=0.1)`| Outputs a material with specified PBR channel values. The optional `normal=` (a normal map color, OpenGL convention, components in 0..1) and `ao=` (ambient occlusion, 0..1) arguments set the normal and occlusion channels explicitly; without them both are derived from the height. | 
 
 
 ### Material channels
 
-A single channel of a material input can be read with a dot, for example `Leather.color`, `Leather.height`, `Leather.roughness`, `Leather.metallic`, `Leather.opacity`, `Leather.normal` or `Leather.ao`. Reading `normal` or `ao` from a material that does not provide them gives the map derived from its height, the same one the viewer shows for that material.
-
-One exception: reading them from a `pbr(...)` written inline in a node whose output is not a material, such as `pbr(height=h).normal` in a node that outputs a color, gives the flat normal (or an occlusion of 1). Connect the material as an input, or let the node output a material, to get the derived maps.
+A single channel of a material input can be read with a dot, for example `Leather.color`, `Leather.height`, `Leather.roughness`, `Leather.metallic`, `Leather.opacity`, `Leather.normal` or `Leather.ao`. Reading `normal` or `ao` from a material that does not provide them gives the map derived from its height, the same one the viewer shows for that material. This also works for a `pbr(...)` written inline, in a node of any output type: `pbr(height=h).normal` gives the normal derived from `h`.
 
 ### Coordinates
 
