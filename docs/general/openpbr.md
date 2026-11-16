@@ -62,6 +62,6 @@ The GLB export writes them with the glTF extensions that game engines and other 
 | *Anisotropy*, *Anisotropy Rotation* | `KHR_materials_anisotropy` |
 | *Thin Film*, *Thin Film Thickness*, *Thin Film IOR* | `KHR_materials_iridescence` |
 
-glTF has no coat color or coat index of refraction: *Coat Color* and *Coat IOR* are left out of GLB files, and the coat is written as a colorless coat with the glTF index of refraction of `1.5`.
+glTF has no coat color or coat index of refraction: *Coat Color* and *Coat IOR* are left out of GLB files, and the coat is written as a colorless coat with the glTF index of refraction of `1.5`. glTF applies *Specular Color* to non-metals only, so the edge color it gives metals in the viewport is not in GLB files either.
 
 The GLB export follows the material as the viewport shows it: on a model imported with these properties, a channel removed from the material (for example an *Output Coat* row set back to *Default* in the *Channels* node) is also removed from the exported model. Importing a GLB reads these extensions into channels and *Output* values; an imported coat gets a *Coat IOR* of `1.5`, as glTF defines it. Maps that use a second UV set are not imported and stay on the exported model as they were.
