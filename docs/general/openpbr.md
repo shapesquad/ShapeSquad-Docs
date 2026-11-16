@@ -43,6 +43,8 @@ The indices of refraction and the emission strength are properties of the whole 
 
 The viewport shades these layers in real time. Like any real-time renderer it approximates them: transmission shows the environment through the surface rather than the objects behind it.
 
+*Anisotropy Rotation* wraps around: `1` is the same direction as `0`. The viewport shades it without a seam where a map wraps, but nodes that blend or blur the channel (a *Mix* of two rotations, a resized map) average the values as numbers, so `0.95` and `0.05` blend to `0.5`, the perpendicular direction. Keep rotation maps free of such wraps where they are blended or scaled.
+
 ## Export
 
 The texture export writes each OpenPBR channel the material has as a map of its own (see [Export](/general/export#channels)).
@@ -61,3 +63,5 @@ The GLB export writes them with the glTF extensions that game engines and other 
 | *Thin Film*, *Thin Film Thickness*, *Thin Film IOR* | `KHR_materials_iridescence` |
 
 glTF has no coat color or coat index of refraction: *Coat Color* and *Coat IOR* are left out of GLB files, and the coat is written as a colorless coat with the glTF index of refraction of `1.5`.
+
+The GLB export follows the material as the viewport shows it: on a model imported with these properties, a channel removed from the material (for example an *Output Coat* row set back to *Default* in the *Channels* node) is also removed from the exported model. Importing a GLB reads these extensions into channels and *Output* values; an imported coat gets a *Coat IOR* of `1.5`, as glTF defines it. Maps that use a second UV set are not imported and stay on the exported model as they were.
