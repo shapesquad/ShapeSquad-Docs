@@ -6,6 +6,8 @@ The *Export* dialog writes your material as texture files, or your model as a GL
 
 Every channel of the material gets a row: *Color*, *Height*, *Roughness*, *Metallic*, *Opacity*, and the *Normal* and *AO* (ambient occlusion) maps. A material that does not provide a normal or ambient occlusion channel itself gets them derived from its height. The derived *AO* starts disabled, as it is slow to compute for large textures.
 
+The [OpenPBR channels](/general/openpbr) the material has (for example *Emission*, *Coat* or *Sheen Color*) get a row each too. Their color channels are written like the *Color* map, the others like *Roughness*.
+
 For each row you choose:
 
 * **Enabled** — whether the file is written.
@@ -53,3 +55,5 @@ A channel is computed once for each resolution, however many files use it, so a 
 ## GLB export
 
 The *Export model* tab writes the model with its materials as a GLB file. When the material has its own ambient occlusion channel, the occlusion is packed into the red channel of the glTF metallic-roughness texture, so that the occlusion and metallic-roughness maps share one ORM image.
+
+The [OpenPBR channels](/general/openpbr#export) and the material values of the *Output* node are written with the glTF `KHR_materials_*` extensions (clearcoat, sheen, transmission, specular, IOR, iridescence, anisotropy and emissive strength).

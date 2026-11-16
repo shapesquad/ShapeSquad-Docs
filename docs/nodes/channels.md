@@ -23,6 +23,8 @@ The node has one parameter for each PBR channel:
 * **Output Metallic**
 * **Output Opacity**
 
+Below them, the [OpenPBR channels](/general/openpbr) have a collapsible group of rows for each layer: *Emission*, *Specular* (*Specular*, *Specular Color*), *Coat* (*Coat*, *Coat Color*, *Coat Roughness*), *Sheen* (*Sheen*, *Sheen Color*, *Sheen Roughness*), *Transmission*, *Anisotropy* (*Anisotropy*, *Anisotropy Rotation*) and *Thin Film* (*Thin Film*, *Thin Film Thickness*).
+
 Each parameter controls which value is output for that channel. By default, every drop-down is set to the corresponding channel coming in from the *Material* input (for example, *Base Color* for *Output Base Color*). If the corresponding channel is not connected, the drop-down shows the channel as missing (for example, *Base Color (missing)*).
 
 ### Drop-down options
@@ -51,6 +53,10 @@ Connect a material, then set the channel you don't want to use to *Default* or *
 ### Adding a channel
 
 Connect a material that is missing a channel (for example, a material with no height). Under *Output Height*, set the parameter to *Custom*, enable the connection button, and connect a node such as a noise texture. This adds a height channel to your PBR material.
+
+### Adding a clear coat
+
+Open the *Coat* group, set *Output Coat* to *Custom* with a value of `1`, and set *Output Coat Roughness* to *Custom* with a low value such as `0.05`. The material gets a glossy varnish on top, while its own *Roughness* still shapes the surface below. The other [OpenPBR channels](/general/openpbr) are added the same way.
 
 ::: tip NOTE
 
