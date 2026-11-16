@@ -51,6 +51,7 @@ s0.parentNode.insertBefore(s1,s0);
           { text: 'Getting Started', link: '/general/getting_started' },
           { text: 'Compatibility', link: '/general/compatibility' },
           { text: 'Export', link: '/general/export' },
+          { text: 'OpenPBR Channels', link: '/general/openpbr' },
           { text: 'Node and Material Settings', link: '/general/node_settings' },
           { text: 'AI Assistant', link: '/general/assistant' }
         ]
