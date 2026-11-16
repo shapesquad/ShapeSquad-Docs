@@ -126,12 +126,14 @@ You can convert values with following functions:
 | Int       | `int(v)` | Converts floating point or boolean value to integer value|
 | Color     | `rgb(r, g, b)`       | Outputs a color of three components|
 | Color     | `rgba(r, g, b, a)`       | Outputs a color of four components. The color components are premultiplied by the alpha: red with alpha 0.5 is `rgba(0.5, 0, 0, 0.5)`, not `rgba(1, 0, 0, 0.5)`. The alpha of a material color blends layers in a Mix node and is written to exported images; the transparency of the material itself is its opacity channel|
-| Material  | `pbr(color=rgba(0.8, 0.8, 0.8, 1.0), roughness=0.5, metallic=0.0, height=0.1)`| Outputs a material with specified PBR channel values. The optional `normal=` (a normal map color, OpenGL convention, components in 0..1) and `ao=` (ambient occlusion, 0..1) arguments set the normal and occlusion channels explicitly; without them both are derived from the height. | 
+| Material  | `pbr(color=rgba(0.8, 0.8, 0.8, 1.0), roughness=0.5, metallic=0.0, height=0.1)`| Outputs a material with specified PBR channel values. The optional `normal=` (a normal map color, OpenGL convention, components in 0..1) and `ao=` (ambient occlusion, 0..1) arguments set the normal and occlusion channels explicitly; without them both are derived from the height. The [OpenPBR channels](/general/openpbr) are arguments too: `emission=`, `specular=`, `specularColor=`, `coat=`, `coatColor=`, `coatRoughness=`, `sheen=`, `sheenColor=`, `sheenRoughness=`, `transmission=`, `anisotropy=`, `anisotropyRotation=`, `thinFilm=` and `thinFilmThickness=`; the material only has the ones given. | 
 
 
 ### Material channels
 
 A single channel of a material input can be read with a dot, for example `Leather.color`, `Leather.height`, `Leather.roughness`, `Leather.metallic`, `Leather.opacity`, `Leather.normal` or `Leather.ao`. Reading `normal` or `ao` from a material that does not provide them gives the map derived from its height, the same one the viewer shows for that material. This also works for a `pbr(...)` written inline, in a node of any output type: `pbr(height=h).normal` gives the normal derived from `h`.
+
+The [OpenPBR channels](/general/openpbr) are read the same way, with their names: `Leather.emission`, `Leather.coat`, `Leather.coatRoughness`, `Leather.sheenColor`, `Leather.thinFilmThickness` and so on. Reading one from a material that does not have it gives its default value.
 
 ### Coordinates
 
